@@ -1,0 +1,95 @@
+site_name: "2022 SANS HHC Write-Up"
+site_author: Thomas Bouve
+site_url: https://n00.be/HolidayHackChallenge2022/
+copyright: Copyright &copy; 2022 <a href="https://n00.be">Thomas Bouve</a>
+theme:
+  icon:
+    # logo: fontawesome/regular/snowflake
+    # logo: fontawesome/solid/sleigh
+    # logo: fontawesome/solid/tree
+    logo: fontawesome/solid/candy-cane
+    # logo: material/rocket-launch
+  name: material
+  favicon: img/misc/favicon.ico
+  features:
+    #- navigation.instant
+    - toc.integrate
+    #- navigation.top
+    #- navigation.tabs
+    #- navigation.tabs.sticky
+    #- navigation.sections
+    #- navigation.expand
+  palette:
+    scheme: default
+    primary: teal
+    accent: teal
+extra:
+  social:
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/crahan
+      name: CraHan on Twitter
+    - icon: fontawesome/brands/github
+      link: https://github.com/crahan
+      name: CraHan on GitHub
+    - icon: fontawesome/brands/instagram
+      link: https://www.instagram.com/crahan/
+      name: CraHan on Instagram
+extra_css:
+  - css/extra.css
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js
+  - js/tablesort.js
+markdown_extensions:
+  - abbr
+  - attr_list
+  - admonition
+  - meta
+  - footnotes
+  - def_list
+  - toc:
+      permalink: ⚓︎
+      toc_depth: 2
+  - pymdownx.details
+  - pymdownx.keys
+  - pymdownx.details
+  - pymdownx.tabbed
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.tasklist:
+      custom_checkbox: true
+nav:
+- Welcome: 'index.md'
+- Objectives:
+  - Objective 1: 'objectives/o1.md'
+  - Objective 2: 'objectives/o2.md'
+  - Objective 3: 'objectives/o3.md'
+  - Objective 4: 'objectives/o4.md'
+  - Objective 5: 'objectives/o5.md'
+  - Objective 6: 'objectives/o6.md'
+  - Objective 7: 'objectives/o7.md'
+  - Objective 8: 'objectives/o8.md'
+  - Objective 9: 'objectives/o9.md'
+  - Objective 10: 'objectives/o10.md'
+  - Objective 11: 'objectives/o11.md'
+  - Objective 12: 'objectives/o12.md'
+  - Objective 13: 'objectives/o13.md'
+- Terminal Hints:
+  - Terminal Hint 1: 'hints/h1.md'
+  - Terminal Hint 2: 'hints/h2.md'
+  - Terminal Hint 3: 'hints/h3.md'
+  - Terminal Hint 4: 'hints/h4.md'
+  - Terminal Hint 5: 'hints/h5.md'
+  - Terminal Hint 6: 'hints/h6.md'
+  - Terminal Hint 7: 'hints/h7.md'
+  - Terminal Hint 8: 'hints/h8.md'
+  - Terminal Hint 9: 'hints/h9.md'
+  - Terminal Hint 10: 'hints/h10.md'
+  - Terminal Hint 11: 'hints/h11.md'
+  - Terminal Hint 12: 'hints/h12.md'
+  - Terminal Hint 13: 'hints/h13.md'
+- Easter Eggs: 'easter_eggs.md'
