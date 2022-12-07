@@ -21,9 +21,10 @@ def format_message(msg: str, msg_type: str) -> str:
     message = f"{timestamp} - {msg}"
 
     msg_type_mapper = {
+        "INFO": click.style(f"[-] {message}", fg="blue"),
         "SUCCESS": click.style(f"[+] {message}", fg="green"),
-        "INFO": click.style(f"[-] {message}", fg="yellow"),
-        "WARNING": click.style(f"[!] {message}", fg="red"),
+        "WARNING": click.style(f"[!] {message}", fg="yellow"),
+        "ERROR": click.style(f"[E] {message}", fg="red"),
     }
 
     return msg_type_mapper.get(msg_type.upper(), message)
@@ -64,22 +65,33 @@ def send_notification() -> bool:
 def check():
     """Loop and check if HHC2022 has started."""
     while True:
-        if is_live():
-            click.echo(
-                format_message(
-                    "It's started! Sending a push notification!", msg_type="success"
-                )
-            )
-
-            if not send_notification():
+        try:
+            if is_live():
                 click.echo(
                     format_message(
-                        "Uh-oh! Push notification failed!", msg_type="warning"
+                        "It's started! Sending a push notification!", msg_type="success"
                     )
                 )
 
-        else:
-            click.echo(format_message("Not yet. Soon though!", msg_type="info"))
+                if not send_notification():
+                    click.echo(
+                        format_message(
+                            "Uh-oh! Push notification failed!", msg_type="error"
+                        )
+                    )
+
+            else:
+                click.echo(format_message("Not yet. Soon though!", msg_type="warning"))
+        except (
+            requests.ConnectTimeout,
+            requests.ConnectionError,
+        ):
+            click.echo(
+                format_message(
+                    f"Connection error. Retrying in {DELAY} seconds",
+                    msg_type="error",
+                )
+            )
 
         time.sleep(DELAY)
 
