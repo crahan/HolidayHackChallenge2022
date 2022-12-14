@@ -5,11 +5,9 @@
 
 ## Introduction
 
-![OMG! Let's go!!!](./img/misc/lets_go.gif){ align=left } Hello there and welcome to my [2022 SANS Holiday Hack Challenge](https://holidayhackchallenge.com/2022/) write-up. Here we are again, for the fifth time no less. In 2020, my write-up won best technical answer. In 2021, I was extremely fortunate to win first prize. This year, more than ever, my motivation is you. The first time player, the cybersecurity enthousiast, the seasoned professional, and every role in between. May this write-up provide you with that nudge to help solve that final challenge or be a learning guide as you dip your toes in the exciting world of cybersecurity! :hugging_face:
+![OMG! Let's go!!!](./img/misc/lets_go.gif){ align=left } Hello there and welcome to my [2022 SANS Holiday Hack Challenge](https://holidayhackchallenge.com/2022/) write-up. Here we are again, for the fifth time no less. In 2020, my write-up won best technical answer. In 2021, I was extremely humbled to win first prize. This year, more than ever, my motivation is you. The first time player, the cybersecurity enthousiast, the seasoned professional, and everyone in between. May this write-up provide you with that nudge to help solve that final challenge or be a learning guide as you dip your toes in the exciting world of cybersecurity! :hugging_face:
 
-Similar to previous years, there's 3 main sections. This page which contains the introduction, answers, the overall narrative, and final conclusion. [Objectives](./objectives/o1.md) contains the write-ups for the main objectives for which an answer had to be submitted and [Terminal Hints](./hints/h2.md) has the write-ups for the additional side challenges which provide you with hints to help solve the main objectives.
-
-As always, there's a few things worth highlighting like [insert list of interesting challenges, solutions, and hacks], the very incomplete list of [Easter eggs](./easter_eggs.md), and all of the [custom scripts](https://github.com/crahan/HolidayHackChallenge2022/tree/main/docs/tools) used throughout the game.
+Unlike previous years, this time around there are only 2 primary sections. This page which contains the introduction, answers, the overall narrative, and final conclusion. [Objectives](./objectives/o1.md) contains the objective write-ups, organized by ring type, for which an answer had to be submitted. Hints are now a lot more closely integrated. You'll collect them as part of the normal story progression and by keeping an eye open for 6 hidden chests spread around the North Pole. Finally, no SANS Holiday Hack Challenge write-up is really complete without a list of some of the [Easter eggs](./easter_eggs.md) and references found along the way. Enjoy!
 
 !!! note "50-page submission limit"
     Each year there's a huge number of write-ups that need to be reviewed by the SANS and Counter Hack teams. To find a good middle ground between preventing information overload and creating a write-up that can stand on its own as a learning resource, some parts, like the *navigation tip* below, are collapsed by default. Skipping over these will not take away from understanding the overall solution, but feel free to expand them to get some additional information.
@@ -73,40 +71,40 @@ As always, there's a few things worth highlighting like [insert list of interest
 
 ## NPC locations
 
-| :material-account: Name | :material-map-marker: Area | :material-gamepad: Challenge                  |
-| :---------------------- | :------------------------: | :-------------------------------------------- |
-| Jingle RingFord         |          Staging           | [KringleCon Orientation](objectives/o1.md)    |
-| Chimney Scissorsticks   |          Approach          | -                                             |
-| Santa                   |          Approach          | -                                             |
-| Garland Candlesticks    |          Netwars           | -                                             |
-| Grinchum                |       Underground #1       | -                                             |
-| Morcel Nougat           |       Underground #1       | -                                             |
-| Tangle Coalbox          |       Underground #1       | -                                             |
-| Sparkle Redberry        |        Tolkien Ring        | [Wireshark Practice](objectives/o2.md)        |
-| Dusty Giftwrap          |        Tolkien Ring        | [Windows Event Logs](objectives/o3.md)        |
-| Fitzy Shortstack        |        Tolkien Ring        | [Suricata Regatta](objectives/o4.md)          |
-| Brozeek                 |       Underground #1       | -                                             |
-| Crozag                  |       Underground #1       | -                                             |
-| Bow Ninecandle          |         Elfen Ring         | [Clone with a Difference](objectives/o5.md)   |
-| Tinsel Upatree          |         Elf House          | [Prison Escape](objectives/o6.md)             |
-| Rippin Proudboot        |         Elf House          | [Jolly CI/CD](objectives/o7.md)               |
-| Alabaster Snowball      |          Web Ring          | [Boria PCAP Mining](objectives/o8.md)         |
-| Hal Tandybuck           |          Web Ring          | [Open Boria Mind Door](objectives/o9.md)      |
-| Akbowl                  |          Fountain          | [Glamtariel's Fountain](objectives/o10.md)    |
-| Jill Underpole          |         Cloud Ring         | [AWS CLI Intro](objectives/o11.md)            |
-| Gerty Snowburrow        |         Cloud Ring         | [Trufflehog Search](objectives/o12.md)        |
-| Sulfrod                 |         Cloud Ring         | [Exploitation via AWS CLI](objectives/o13.md) |
-| Wombley Cube            |    Burning Ring of Fire    | [Buy a Hat](objectives/o14.md)                |
-| Palzari                 |    Burning Ring of Fire    | [Buy a Hat](objectives/o14.md)                |
-| Chorizo                 |    Burning Ring of Fire    | -                                             |
-| Slicmer                 |    Burning Ring of Fire    | [Blockchain Divination](objectives/o15.md)    |
-| Luigi                   |    Burning Ring of Fire    | [Exploit a Smart Contract](objectives/o16.md) |
-| Santa                   |           Entry            | -                                             |
-| Rose Mold               |           Entry            | -                                             |
-| Timpy Toque             |           Entry            | -                                             |
-| Eve Snowshoes           |           Entry            | -                                             |
-| Smilegol                |           Entry            | -                                             |
-| Angel Candysalt         |           Entry            | -                                             |
+| :material-account: Name | :material-map-marker: Area | level | :material-gamepad: Challenge                  |
+| :---------------------- | :------------------------: | :---: | :-------------------------------------------- |
+| Jingle RingFord         |          Staging           |   0   | [KringleCon Orientation](objectives/o1.md)    |
+| Chimney Scissorsticks   |          Approach          |   0   | -                                             |
+| Santa                   |          Approach          |   0   | -                                             |
+| Garland Candlesticks    |          Netwars           |   0   | -                                             |
+| Grinchum                |       Underground #1       |   0   | -                                             |
+| Morcel Nougat           |       Underground #1       |       | -                                             |
+| Tangle Coalbox          |       Underground #1       |       | -                                             |
+| Sparkle Redberry        |        Tolkien Ring        |       | [Wireshark Practice](objectives/o2.md)        |
+| Dusty Giftwrap          |        Tolkien Ring        |       | [Windows Event Logs](objectives/o3.md)        |
+| Fitzy Shortstack        |        Tolkien Ring        |       | [Suricata Regatta](objectives/o4.md)          |
+| Brozeek                 |       Underground #1       |       | -                                             |
+| Crozag                  |       Underground #1       |       | -                                             |
+| Bow Ninecandle          |         Elfen Ring         |       | [Clone with a Difference](objectives/o5.md)   |
+| Tinsel Upatree          |         Elf House          |       | [Prison Escape](objectives/o6.md)             |
+| Rippin Proudboot        |         Elf House          |       | [Jolly CI/CD](objectives/o7.md)               |
+| Alabaster Snowball      |          Web Ring          |       | [Boria PCAP Mining](objectives/o8.md)         |
+| Hal Tandybuck           |          Web Ring          |       | [Open Boria Mind Door](objectives/o9.md)      |
+| Akbowl                  |          Fountain          |       | [Glamtariel's Fountain](objectives/o10.md)    |
+| Jill Underpole          |         Cloud Ring         |       | [AWS CLI Intro](objectives/o11.md)            |
+| Gerty Snowburrow        |         Cloud Ring         |       | [Trufflehog Search](objectives/o12.md)        |
+| Sulfrod                 |         Cloud Ring         |       | [Exploitation via AWS CLI](objectives/o13.md) |
+| Wombley Cube            |    Burning Ring of Fire    |       | [Buy a Hat](objectives/o14.md)                |
+| Palzari                 |    Burning Ring of Fire    |       | [Buy a Hat](objectives/o14.md)                |
+| Chorizo                 |    Burning Ring of Fire    |       | -                                             |
+| Slicmer                 |    Burning Ring of Fire    |       | [Blockchain Divination](objectives/o15.md)    |
+| Luigi                   |    Burning Ring of Fire    |       | [Exploit a Smart Contract](objectives/o16.md) |
+| Santa                   |           Entry            |   0   | -                                             |
+| Rose Mold               |           Entry            |   0   | -                                             |
+| Timpy Toque             |           Entry            |   0   | -                                             |
+| Eve Snowshoes           |           Entry            |   0   | -                                             |
+| Smilegol                |           Entry            |   0   | -                                             |
+| Angel Candysalt         |           Entry            |   0   | -                                             |
 
 
 ## Conclusion
@@ -134,11 +132,14 @@ As always, there's a few things worth highlighting like [insert list of interest
     But thanks to you, Grinchum is no more, and the holiday season is saved!<br/>
     Ho ho ho, happy holidays!
 
-!!! quote "Rose Mold"
-    I'm Rose Mold. What planet are you from?<br/>
-    What am I doing here? I could ask the same of you!<br/>
-    Collecting web, cloud, elfen rings... What about onion rings? A Sebring?<br/>
-    n00bs...
+!!! quote "Smilegol"
+    I must give you my most thankful of thanks, and most sorry of sorries.<br/>
+    I'm not sure what happened, but I just couldn't resist the Rings' call.<br/>
+    But once you returned the Rings to Santa, I was no longer so spellbound.<br/>
+    I could think clearly again, so I shouted off that awful persona.<br/>
+    And that grouchy Grinchum was gone for good. Now, I can be me again, just in time for gift giving.<br/>
+    This is a lesson I won't soon forget, and I certainly won't forget you.<br/>
+    I wish you smooth sailing on wherever your next voyage takes you!
 
 !!! quote "Timpy Toque"
     Thank you for saving Smilegol and protecting the Rings.<br/>
@@ -151,17 +152,14 @@ As always, there's a few things worth highlighting like [insert list of interest
     If you'd like, you can order special swag that's only available to our victors!<br/>
     Thank you!
 
-!!! quote "Smilegol"
-    I must give you my most thankful of thanks, and most sorry of sorries.<br/>
-    I'm not sure what happened, but I just couldn't resist the Rings' call.<br/>
-    But once you returned the Rings to Santa, I was no longer so spellbound.<br/>
-    I could think clearly again, so I shouted off that awful persona.<br/>
-    And that grouchy Grinchum was gone for good. Now, I can be me again, just in time for gift giving.<br/>
-    This is a lesson I won't soon forget, and I certainly won't forget you.<br/>
-    I wish you smooth sailing on wherever your next voyage takes you!
-
 !!! quote "Angel Candysalt"
     Greetings North Pole savior! I'm Angel Candysalt!<br/>
     A euphemism? No, that's my name. Why are people still asking me that?<br/>
     Anywho, thank you for everything you've done.<br/>
     You'll go down in history!
+
+!!! quote "Rose Mold"
+    I'm Rose Mold. What planet are you from?<br/>
+    What am I doing here? I could ask the same of you!<br/>
+    Collecting web, cloud, elfen rings... What about onion rings? A Sebring?<br/>
+    n00bs...

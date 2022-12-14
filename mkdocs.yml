@@ -7,6 +7,7 @@ theme:
     # logo: fontawesome/regular/snowflake
     # logo: fontawesome/solid/sleigh
     # logo: fontawesome/solid/tree
+    # logo: fontawesome/solid/ring
     logo: fontawesome/solid/candy-cane
     # logo: material/rocket-launch
   name: material
@@ -17,12 +18,16 @@ theme:
     #- navigation.top
     #- navigation.tabs
     #- navigation.tabs.sticky
-    #- navigation.sections
+    - navigation.sections
     #- navigation.expand
+    #- navigation.top
+    #- navigation.prune
+    #- toc.follow
   palette:
     scheme: default
     primary: teal
     accent: teal
+
 extra:
   social:
     - icon: fontawesome/brands/twitter
@@ -52,7 +57,8 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.keys
   - pymdownx.details
-  - pymdownx.tabbed
+  - pymdownx.tabbed:
+      alternate_style: true
   - pymdownx.superfences
   - pymdownx.highlight
   - pymdownx.inlinehilite
@@ -65,20 +71,27 @@ markdown_extensions:
 nav:
 - Welcome: 'index.md'
 - Objectives:
-  - KringleCon Orientation: 'objectives/o1.md'
-  - Wireshark Practice: 'objectives/o2.md'
-  - Windows Event Logs: 'objectives/o3.md'
-  - Suricata Regatta: 'objectives/o4.md'
-  - Clone with a Difference: 'objectives/o5.md'
-  - Prison Escape: 'objectives/o6.md'
-  - Jolly CI/CD: 'objectives/o7.md'
-  - Boria PCAP Mining: 'objectives/o8.md'
-  - Open Boria Mine Door: 'objectives/o9.md'
-  - Glamtariel's Fountain: 'objectives/o10.md'
-  - AWS CLI Intro: 'objectives/o11.md'
-  - Trufflehog Search: 'objectives/o12.md'
-  - Exploitation via AWS CLI: 'objectives/o13.md'
-  - Buy a Hat: 'objectives/o14.md'
-  - Blockchain Divination: 'objectives/o15.md'
-  - Exploit a Smart Contract: 'objectives/o16.md'
-- Easter Eggs: 'easter_eggs.md'
+  - Introduction:
+    - KringleCon Orientation: 'objectives/o1.md'
+  - Tolkien Ring:
+    - Wireshark Practice: 'objectives/o2.md'
+    - Windows Event Logs: 'objectives/o3.md'
+    - Suricata Regatta: 'objectives/o4.md'
+  - Elfen Ring:
+    - Clone with a Difference: 'objectives/o5.md'
+    - Prison Escape: 'objectives/o6.md'
+    - Jolly CI/CD: 'objectives/o7.md'
+  - Web Ring:
+    - Boria PCAP Mining: 'objectives/o8.md'
+    - Open Boria Mine Door: 'objectives/o9.md'
+    - Glamtariel's Fountain: 'objectives/o10.md'
+  - Cloud Ring:
+    - AWS CLI Intro: 'objectives/o11.md'
+    - Trufflehog Search: 'objectives/o12.md'
+    - Exploitation via AWS CLI: 'objectives/o13.md'
+  - Burning Ring of Fire:
+    - Buy a Hat: 'objectives/o14.md'
+    - Blockchain Divination: 'objectives/o15.md'
+    - Exploit a Smart Contract: 'objectives/o16.md'
+- Extras:
+  - Easter Eggs: 'easter_eggs.md'

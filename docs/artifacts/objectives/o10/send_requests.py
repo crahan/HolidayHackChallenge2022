@@ -1,6 +1,5 @@
 #!/usr/bin/env python
-"""Check if KringleCon 2022 is live!"""
-import time
+"""Talk to Glamntarial."""
 import os
 from datetime import datetime
 
