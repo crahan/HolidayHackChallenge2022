@@ -15,7 +15,7 @@ article.md-content__inner {
     padding-bottom: 56.25%;
 }
 
-.video-wrapper > iframe {
+.video-wrapper>iframe {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -28,3 +28,9 @@ article.md-content__inner {
 th.filename .highlight span.filename {
     margin-top: 0;
 }
+
+/* .md-typeset .admonition,
+.md-typeset details {
+    border-width: 0;
+    border-left-width: 4px;
+} */
