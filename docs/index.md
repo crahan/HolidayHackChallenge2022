@@ -21,7 +21,7 @@ Unlike previous years, this time around there are only 2 primary sections. This 
 ## Answers
 
 !!! done "1. KringleCon Orientation - :fontawesome-solid-star::fontawesome-regular-star::fontawesome-regular-star::fontawesome-regular-star::fontawesome-regular-star:"
-    Follow [Jingle Ringford's instructions](./objectives/o2.md) to open the gate.
+    Follow [Jingle Ringford's instructions](./objectives/o2.md) to create a KringleCon wallet and open the gate.
 
 !!! done "2. Wireshark Practice - :fontawesome-solid-star::fontawesome-regular-star::fontawesome-regular-star::fontawesome-regular-star::fontawesome-regular-star:"
     [Answer to Objective 2](./objectives/o2.md)

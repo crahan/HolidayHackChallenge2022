@@ -142,14 +142,14 @@ If you walk along the left side to the back of Santa's castle, you'll end up in 
 
 ## Literal beanie hat
 
-You can buy literal *beanie* hats from the hat vending machine. :smile:
+You can buy literal *beanie* hats from the hat vending machine. Hats made out of actual coffee beans... :smile:
 
 ![Literal beanie hat](./img/misc/literal_beanie_hat.png){ class=border }
 
 
 ## You are awesome!
 
-Last, but not least, the [background image](./img/misc/underground_main.jpg) to the underground tunnels contains a special message of support!
+Last, but not least, the [background image](./img/misc/underground_main.jpg) to the underground tunnels contains a special message of support to everyone who decides to spend some time at the North Pole, helping out Santa solve all these challenges. *You are awesome!*
 
 ![You are awesome!](./img/misc/you_are_awesome.png)
 
