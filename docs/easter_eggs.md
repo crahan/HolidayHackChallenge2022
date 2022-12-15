@@ -127,7 +127,7 @@ The [Bored Sporc Rowboard Society](https://boredsporcrowboatsociety.com/) (BSRS)
 
 The cherry on the cake is probably the footnote about the clubhouse though! :joy:
 
-!!! quote "BSRS website footer"
+!!! abstract "BSRS website footer"
     *This is an artist's rendering of the clubhouse we're considering building if we end up, like, rollin' in it after this NFT thing takes off. This does not represent the actual clubhouse which right now is kinda just, like, the bottom level of my parent's cave. I moved home about ten years ago, after I got, like, laid-off from my job working Sporc Squad for Beast Buy. My boss, Chordclak, was a total lamer... Anyway, that picture isn't the real clubhouse. My old girlfriend, Glanchorf, she drew that. I always told her that she should go to art school and stuff because, like, she was really talented and all, but she just kept working at Burgher King and eventually she dumped me for that lamer Chordclak. I kept the picture though, and decided to use it on this site.
 
     And just in case you're reading this Chordclak, I'm gonna be rich and you suck.
