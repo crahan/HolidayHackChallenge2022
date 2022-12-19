@@ -24,13 +24,13 @@ Unlike previous years, this time around there are only 2 primary sections. This 
     Follow [Jingle Ringford's instructions](./objectives/o2.md) to create a KringleCon wallet and open the gate.
 
 !!! done "2. Wireshark Practice - :fontawesome-solid-star::fontawesome-regular-star::fontawesome-regular-star::fontawesome-regular-star::fontawesome-regular-star:"
-    [Answer to Objective 2](./objectives/o2.md)
+    Investigate the `suspicious.pcap` packet capture file and [answer all the questions](./objectives/o2.md).
 
 !!! done "3. Windows Event Logs - :fontawesome-solid-star::fontawesome-solid-star::fontawesome-regular-star::fontawesome-regular-star::fontawesome-regular-star:"
-    [Answer to Objective 3](./objectives/o3.md)
+    Investigate the `powershell.evtx` log file and [answer all questions](./objectives/o3.md).
 
 !!! done "4. Suricata Regatta - :fontawesome-solid-star::fontawesome-solid-star::fontawesome-solid-star::fontawesome-regular-star::fontawesome-regular-star:"
-    [Answer to Objective 4](./objectives/o4.md)
+    Add the [4 requested Suricata rules](./objectives/o4.md) to the `suricata.rules` file.
 
 !!! done "5. Clone with a Difference - :fontawesome-solid-star::fontawesome-regular-star::fontawesome-regular-star::fontawesome-regular-star::fontawesome-regular-star:"
     [`maintainers`](./objectives/o5.md)

@@ -34,3 +34,8 @@ th.filename .highlight span.filename {
     border-width: 0;
     border-left-width: 4px;
 } */
+
+/*table thead {
+    background-color: rgba(0, 0, 0, .500);
+    color: #ffffff;
+}*/
