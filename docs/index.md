@@ -33,16 +33,19 @@ Unlike previous years, this time around there are only 2 primary sections. This 
     Add the [4 requested Suricata rules](./objectives/o4.md) to the `suricata.rules` file.
 
 !!! done "5. Clone with a Difference - :fontawesome-solid-star::fontawesome-regular-star::fontawesome-regular-star::fontawesome-regular-star::fontawesome-regular-star:"
-    [`maintainers`](./objectives/o5.md)
+    [maintainers](./objectives/o5.md)
 
 !!! done "6. Prison Escape - :fontawesome-solid-star::fontawesome-solid-star::fontawesome-solid-star::fontawesome-regular-star::fontawesome-regular-star:"
-    [`082bb339ec19de4935867`](./objectives/o6.md)
+    [082bb339ec19de4935867](./objectives/o6.md)
 
 !!! done "7. Jolly CI/CD - :fontawesome-solid-star::fontawesome-solid-star::fontawesome-solid-star::fontawesome-solid-star::fontawesome-solid-star:"
-    [`oI40zIuCcN8c3MhKgQjOMN8lfYtVqcK`](./objectives/o7.md)
+    [oI40zIuCcN8c3MhKgQjOMN8lfYtVqcK](./objectives/o7.md)
 
-!!! done "8. Boria PCAP Mining - :fontawesome-solid-star::fontawesome-regular-star::fontawesome-regular-star::fontawesome-regular-star::fontawesome-regular-star:"
-    [`http://169.254.169.254/latest/meta-data/identity-credentials/ec2/security-credentials/ec2-instance`](./objectives/o8.md)
+!!! done "8. Boria PCAP Mining - :fontawesome-solid-star::fontawesome-solid-star::fontawesome-regular-star::fontawesome-regular-star::fontawesome-regular-star:"
+    Naughty IP: [18.222.86.32](./objectives/o8.md#naughty-ip)<br/>
+    Credential Mining: [*alice*](./objectives/o8.md#credential-mining)<br/>
+    404 FTW: [`/proc`](./objectives/o8.md#404-ftw)<br/>
+    IMDS, XXE, and Other Abbreviations: [`http://169.254.169.254/latest/meta-data/identity-credentials/ec2/security-credentials/ec2-instance`](./objectives/o8.md#imds-xxe-and-other-abbreviations)
 
 !!! done "9. Open Boria Mine Door - :fontawesome-solid-star::fontawesome-solid-star::fontawesome-regular-star::fontawesome-regular-star::fontawesome-regular-star:"
     [Answer to Objective 9](./objectives/o9.md)
