@@ -48,7 +48,7 @@ Unlike previous years, this time around there are only 2 primary sections. This 
     IMDS, XXE, and Other Abbreviations: [`http://169.254.169.254/latest/meta-data/identity-credentials/ec2/security-credentials/ec2-instance`](./objectives/o8.md#imds-xxe-and-other-abbreviations)
 
 !!! done "9. Open Boria Mine Door - :fontawesome-solid-star::fontawesome-solid-star::fontawesome-regular-star::fontawesome-regular-star::fontawesome-regular-star:"
-    [Answer to Objective 9](./objectives/o9.md)
+    [Follow the instructions](./objectives/o9.md) to open all the locks.
 
 !!! done "10. Glamtariel's Fountain - :fontawesome-solid-star::fontawesome-solid-star::fontawesome-solid-star::fontawesome-solid-star::fontawesome-regular-star:"
     [`goldring-morethansupertopsecret76394734.png`](./objectives/o10.md)
