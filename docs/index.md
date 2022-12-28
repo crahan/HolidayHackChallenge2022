@@ -60,54 +60,16 @@ Unlike previous years, this time around there are only two main sections. There'
     [`put_policy.py`](./objectives/o12.md)
 
 !!! done "13. Exploitation via AWS CLI - :fontawesome-solid-star::fontawesome-solid-star::fontawesome-solid-star::fontawesome-regular-star::fontawesome-regular-star:"
-    [Answer to Objective 13](./objectives/o13.md)
+    **TODO** [Answer to Objective 13](./objectives/o13.md)
 
 !!! done "14. Buy a Hat - :fontawesome-solid-star::fontawesome-solid-star::fontawesome-regular-star::fontawesome-regular-star::fontawesome-regular-star:"
-    [Answer to Objective 14](./objectives/o14.md)
+    **TODO** [Answer to Objective 14](./objectives/o14.md)
 
 !!! done "15. Blockchain Divination - :fontawesome-solid-star::fontawesome-solid-star::fontawesome-solid-star::fontawesome-solid-star::fontawesome-regular-star:"
     [`0xc27A2D3DE339Ce353c0eFBa32e948a88F1C86554`](./objectives/o15.md)
 
 !!! done "16. Exploit a Smart Contract - :fontawesome-solid-star::fontawesome-solid-star::fontawesome-solid-star::fontawesome-solid-star::fontawesome-solid-star:"
-    [Answer to Objective 16](./objectives/o16.md)
-
-
-## NPC locations
-
-| :material-account: Name | :material-map-marker: Area | level | :material-gamepad: Challenge                  |
-| :---------------------- | :------------------------: | :---: | :-------------------------------------------- |
-| Jingle RingFord         |          Staging           |   0   | [KringleCon Orientation](objectives/o1.md)    |
-| Chimney Scissorsticks   |          Approach          |   0   | -                                             |
-| Santa                   |          Approach          |   0   | -                                             |
-| Garland Candlesticks    |          Netwars           |   0   | -                                             |
-| Grinchum                |       Underground #1       |   0   | -                                             |
-| Morcel Nougat           |       Underground #1       |       | -                                             |
-| Tangle Coalbox          |       Underground #1       |       | -                                             |
-| Sparkle Redberry        |        Tolkien Ring        |       | [Wireshark Practice](objectives/o2.md)        |
-| Dusty Giftwrap          |        Tolkien Ring        |       | [Windows Event Logs](objectives/o3.md)        |
-| Fitzy Shortstack        |        Tolkien Ring        |       | [Suricata Regatta](objectives/o4.md)          |
-| Brozeek                 |       Underground #1       |       | -                                             |
-| Crozag                  |       Underground #1       |       | -                                             |
-| Bow Ninecandle          |         Elfen Ring         |       | [Clone with a Difference](objectives/o5.md)   |
-| Tinsel Upatree          |         Elf House          |       | [Prison Escape](objectives/o6.md)             |
-| Rippin Proudboot        |         Elf House          |       | [Jolly CI/CD](objectives/o7.md)               |
-| Alabaster Snowball      |          Web Ring          |       | [Boria PCAP Mining](objectives/o8.md)         |
-| Hal Tandybuck           |          Web Ring          |       | [Open Boria Mind Door](objectives/o9.md)      |
-| Akbowl                  |          Fountain          |       | [Glamtariel's Fountain](objectives/o10.md)    |
-| Jill Underpole          |         Cloud Ring         |       | [AWS CLI Intro](objectives/o11.md)            |
-| Gerty Snowburrow        |         Cloud Ring         |       | [Trufflehog Search](objectives/o12.md)        |
-| Sulfrod                 |         Cloud Ring         |       | [Exploitation via AWS CLI](objectives/o13.md) |
-| Wombley Cube            |    Burning Ring of Fire    |       | [Buy a Hat](objectives/o14.md)                |
-| Palzari                 |    Burning Ring of Fire    |       | [Buy a Hat](objectives/o14.md)                |
-| Chorizo                 |    Burning Ring of Fire    |       | -                                             |
-| Slicmer                 |    Burning Ring of Fire    |       | [Blockchain Divination](objectives/o15.md)    |
-| Luigi                   |    Burning Ring of Fire    |       | [Exploit a Smart Contract](objectives/o16.md) |
-| Santa                   |           Entry            |   0   | -                                             |
-| Rose Mold               |           Entry            |   0   | -                                             |
-| Timpy Toque             |           Entry            |   0   | -                                             |
-| Eve Snowshoes           |           Entry            |   0   | -                                             |
-| Smilegol                |           Entry            |   0   | -                                             |
-| Angel Candysalt         |           Entry            |   0   | -                                             |
+     **TODO** [Answer to Objective 16](./objectives/o16.md)
 
 
 ## Conclusion
@@ -144,24 +106,24 @@ Unlike previous years, this time around there are only two main sections. There'
     This is a lesson I won't soon forget, and I certainly won't forget you.<br/>
     I wish you smooth sailing on wherever your next voyage takes you!
 
-!!! quote "Timpy Toque"
+??? quote "Timpy Toque"
     Thank you for saving Smilegol and protecting the Rings.<br/>
     You will always be a friend of the Flobbits.
 
-!!! quote "Eve Snowshoes"
+??? quote "Eve Snowshoes"
     Hello there, super helper! I'm Eve Snowshoes.<br/>
     The other elves and I are so glad you were able to help recover the rings!<br/>
     The holidays wouldn't have been the same without your hard work.<br/>
-    If you'd like, you can order special swag that's only available to our victors!<br/>
+    If you'd like, you can order [special swag](https://www.youtube.com/watch?v=dQw4w9WgXcQ) that's only available to our victors!<br/>
     Thank you!
 
-!!! quote "Angel Candysalt"
+??? quote "Angel Candysalt"
     Greetings North Pole savior! I'm Angel Candysalt!<br/>
     A euphemism? No, that's my name. Why are people still asking me that?<br/>
     Anywho, thank you for everything you've done.<br/>
     You'll go down in history!
 
-!!! quote "Rose Mold"
+??? quote "Rose Mold"
     I'm Rose Mold. What planet are you from?<br/>
     What am I doing here? I could ask the same of you!<br/>
     Collecting web, cloud, elfen rings... What about onion rings? A Sebring?<br/>
