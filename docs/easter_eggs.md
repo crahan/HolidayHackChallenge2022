@@ -88,7 +88,7 @@ Another reference, similar to Jason, is [Dimitri](https://knowyourmeme.com/memes
 
 ## Boaty McBoatFace
 
-The asset name for the boat in Elfen Ring is [Boaty McBoatface](https://en.wikipedia.org/wiki/Boaty_McBoatface)! :D
+The asset name for the boat in Elfen Ring is [Boaty McBoatface](https://en.wikipedia.org/wiki/Boaty_McBoatface)! :smile:
 
 ![boaty_mcboatface.png](./img/misc/boaty_mcboatface.png){ class=border }
 
