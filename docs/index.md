@@ -5,7 +5,7 @@
 
 ## Introduction
 
-![Going on an adventure!!!](./img/misc/going_on_an_adventure.gif){ align=left } Hello there and welcome to my [2022 SANS Holiday Hack Challenge](https://holidayhackchallenge.com/2022/) write-up. Here we are again, for the fifth time no less. In 2020, my write-up won best technical answer. In 2021, I was extremely humbled to win first prize. This year, more than ever, my motivation is you. The first time player, the cybersecurity enthousiast, the seasoned professional, and every type of profile in between. May this write-up provide you with that nudge to help solve that final challenge or be a learning guide as you dip your toes in the exciting world of cybersecurity! :hugging_face:
+![Going on an adventure!!!](./img/misc/going_on_an_adventure.gif){ align=left } Hello there and welcome to my [2022 SANS Holiday Hack Challenge](https://holidayhackchallenge.com/2022/) write-up. Here we are again, for the fifth time no less. In 2020, my write-up won best technical answer. In 2021, I was extremely humbled to win first prize. This year, more than ever, my motivation is *you*. The first time player, the cybersecurity enthousiast, the seasoned professional, and every type of profile in between. May this write-up provide you with that nudge to help solve that final challenge or be a learning guide as you dip your toes in the exciting world of cybersecurity! :hugging_face:
 
 Unlike previous years, this time around there are only two main sections. There's this page, which contains the introduction, answers, the overall narrative, and final conclusion. And there's [Objectives](./objectives/o1.md), where you'll find the individual objective write-ups, organized by ring type, for which an answer had to be submitted. Hints are now a lot more closely integrated. You'll collect them as part of the normal story progression and by keeping an eye out for 6 hidden chests spread around the North Pole. Finally, no SANS Holiday Hack Challenge write-up is really complete without a list of [Easter eggs](./easter_eggs.md) and references found along the way, a little bit of [cheating](./objectives/o2.md#cheating), and the odd [custom script](https://github.com/crahan/HolidayHackChallenge2022/tree/main/docs/tools) or two. Enjoy!
 
@@ -54,13 +54,13 @@ Unlike previous years, this time around there are only two main sections. There'
     [`goldring-morethansupertopsecret76394734.png`](./objectives/o10.md)
 
 !!! done "11. AWS CLI Intro1 - :fontawesome-solid-star::fontawesome-regular-star::fontawesome-regular-star::fontawesome-regular-star::fontawesome-regular-star:"
-    Enter the [correct AWS CLI commands](./objectives/o11.md) in the terminal.
+    Enter the [correct AWS CLI commands](./objectives/o11.md) in the AWS 101 terminal.
 
 !!! done "12. Trufflehog Search - :fontawesome-solid-star::fontawesome-solid-star::fontawesome-regular-star::fontawesome-regular-star::fontawesome-regular-star:"
     [`put_policy.py`](./objectives/o12.md)
 
 !!! done "13. Exploitation via AWS CLI - :fontawesome-solid-star::fontawesome-solid-star::fontawesome-solid-star::fontawesome-regular-star::fontawesome-regular-star:"
-    **TODO** [Answer to Objective 13](./objectives/o13.md)
+    Enter the [correct AWS CLI commands](./objectives/o13.md) in the AWS 201 terminal.
 
 !!! done "14. Buy a Hat - :fontawesome-solid-star::fontawesome-solid-star::fontawesome-regular-star::fontawesome-regular-star::fontawesome-regular-star:"
     **TODO** [Answer to Objective 14](./objectives/o14.md)
