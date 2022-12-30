@@ -135,7 +135,7 @@ The cherry on the cake is probably the footnote about the clubhouse though! :joy
 
 ## The Discworld
 
-If you walk along the left side to the back of Santa's castle, you'll end up in an area named *\_\_Shenanigans\_\_*. The room's [backdrop](./img/misc/turtles.jpg) is an image of [the Discworld](https://en.wikipedia.org/wiki/Discworld_(world)), a fictional setting for all of Terry Pratchett's Discworld fantasy novels. If you've forgotten the private key to your KringleCoin (KC) wallet, you can use the terminal to call Santa who will help your recover it.
+If you walk along the left side to the back of Santa's castle, you'll end up in an area named *\_\_Shenanigans\_\_*. The room's [backdrop](./img/misc/turtles.jpg) is an image of [the Discworld](https://en.wikipedia.org/wiki/Discworld_(world)), a fictional setting for all of Terry Pratchett's Discworld fantasy novels. If you've forgotten the key to your KringleCoin (KC) wallet, you can use the terminal in this area to call Santa who will help you recover it.
 
 ![Shenanigans area](./img/misc/shenanigans_area.png)
 
