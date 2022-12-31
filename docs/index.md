@@ -63,7 +63,7 @@ Unlike previous years, this time around there are only two main sections. There'
     Enter the [correct AWS CLI commands](./objectives/o13.md) in the AWS 201 terminal.
 
 !!! done "14. Buy a Hat - :fontawesome-solid-star::fontawesome-solid-star::fontawesome-regular-star::fontawesome-regular-star::fontawesome-regular-star:"
-    **TODO** [Answer to Objective 14](./objectives/o14.md)
+    [Buy a hat](./objectives/o14.md) using the hat vending machine and KTM.
 
 !!! done "15. Blockchain Divination - :fontawesome-solid-star::fontawesome-solid-star::fontawesome-solid-star::fontawesome-solid-star::fontawesome-regular-star:"
     [`0xc27A2D3DE339Ce353c0eFBa32e948a88F1C86554`](./objectives/o15.md)
