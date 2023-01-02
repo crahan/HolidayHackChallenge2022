@@ -10,6 +10,7 @@ pydocstyle
 pylint
 pymdown-extensions
 PyYAML
+python-dateutil
 python-dotenv
 requests
 tqdm
