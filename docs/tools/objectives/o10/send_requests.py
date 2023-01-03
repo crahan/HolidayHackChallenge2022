@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-"""Talk to Glamntarial."""
+"""Talk to Glamtariel."""
 import os
 from datetime import datetime
 from typing import Optional
