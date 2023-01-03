@@ -74,7 +74,7 @@ Unlike previous years, this time around there are only two main sections. There'
 
 ## Conclusion
 
-??? Abstract "Narrative"
+!!! Abstract "Narrative"
     Five Rings for the Christmas king immersed in cold<br>
     Each Ring now missing from its zone<br>
     The first with bread kindly given, not sold<br>
