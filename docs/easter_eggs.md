@@ -109,14 +109,17 @@ The WebSocket at `wss://2022.kringlecon.com/ws` is a lot of fun to play around w
 [Jolly CI/CD](./objectives/o7.md) appears to be a reference to Game of Thrones (GoT) with mentions of [houses from the North](https://gameofthrones.fandom.com/wiki/Category:Houses_from_the_North).
 
 !!! abstract "Welcome message"
+    ```text
     Greetings Noble Player,
 
     Many thanks for answering our desperate cry for help!
 
     You may have heard that some evil Sporcs have opened up a web-store selling
-    counterfeit banners and flags of the many **noble houses found in the land of
-    the North**! They have leveraged some dastardly technology to power their
+    counterfeit banners and flags of the many noble houses found in the land of
+    the North! They have leveraged some dastardly technology to power their
     storefront, and this technology is known as PHP!
+    ...
+    ```
 
 
 ## Bored Ape Yacht Club
