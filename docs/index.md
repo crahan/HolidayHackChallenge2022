@@ -20,55 +20,55 @@ Unlike previous years, this time around there are only two main sections. There'
 
 ## Answers
 
-!!! done "1. KringleCon Orientation - :fontawesome-solid-star::fontawesome-regular-star::fontawesome-regular-star::fontawesome-regular-star::fontawesome-regular-star:"
+!!! success "1. KringleCon Orientation - :fontawesome-solid-star::fontawesome-regular-star::fontawesome-regular-star::fontawesome-regular-star::fontawesome-regular-star:"
     Follow [Jingle Ringford's instructions](./objectives/o2.md) to create a KringleCon wallet and open the gate.
 
-!!! done "2. Wireshark Practice - :fontawesome-solid-star::fontawesome-regular-star::fontawesome-regular-star::fontawesome-regular-star::fontawesome-regular-star:"
+!!! success "2. Wireshark Practice - :fontawesome-solid-star::fontawesome-regular-star::fontawesome-regular-star::fontawesome-regular-star::fontawesome-regular-star:"
     Investigate the `suspicious.pcap` packet capture file and [answer all the questions](./objectives/o2.md).
 
-!!! done "3. Windows Event Logs - :fontawesome-solid-star::fontawesome-solid-star::fontawesome-regular-star::fontawesome-regular-star::fontawesome-regular-star:"
+!!! success "3. Windows Event Logs - :fontawesome-solid-star::fontawesome-solid-star::fontawesome-regular-star::fontawesome-regular-star::fontawesome-regular-star:"
     Investigate the `powershell.evtx` log file and [answer all questions](./objectives/o3.md).
 
-!!! done "4. Suricata Regatta - :fontawesome-solid-star::fontawesome-solid-star::fontawesome-solid-star::fontawesome-regular-star::fontawesome-regular-star:"
+!!! success "4. Suricata Regatta - :fontawesome-solid-star::fontawesome-solid-star::fontawesome-solid-star::fontawesome-regular-star::fontawesome-regular-star:"
     Add the [4 requested Suricata rules](./objectives/o4.md) to the `suricata.rules` file.
 
-!!! done "5. Clone with a Difference - :fontawesome-solid-star::fontawesome-regular-star::fontawesome-regular-star::fontawesome-regular-star::fontawesome-regular-star:"
+!!! success "5. Clone with a Difference - :fontawesome-solid-star::fontawesome-regular-star::fontawesome-regular-star::fontawesome-regular-star::fontawesome-regular-star:"
     [maintainers](./objectives/o5.md)
 
-!!! done "6. Prison Escape - :fontawesome-solid-star::fontawesome-solid-star::fontawesome-solid-star::fontawesome-regular-star::fontawesome-regular-star:"
+!!! success "6. Prison Escape - :fontawesome-solid-star::fontawesome-solid-star::fontawesome-solid-star::fontawesome-regular-star::fontawesome-regular-star:"
     [082bb339ec19de4935867](./objectives/o6.md)
 
-!!! done "7. Jolly CI/CD - :fontawesome-solid-star::fontawesome-solid-star::fontawesome-solid-star::fontawesome-solid-star::fontawesome-solid-star:"
+!!! success "7. Jolly CI/CD - :fontawesome-solid-star::fontawesome-solid-star::fontawesome-solid-star::fontawesome-solid-star::fontawesome-solid-star:"
     [oI40zIuCcN8c3MhKgQjOMN8lfYtVqcK](./objectives/o7.md)
 
-!!! done "8. Boria PCAP Mining - :fontawesome-solid-star::fontawesome-solid-star::fontawesome-regular-star::fontawesome-regular-star::fontawesome-regular-star:"
+!!! success "8. Boria PCAP Mining - :fontawesome-solid-star::fontawesome-solid-star::fontawesome-regular-star::fontawesome-regular-star::fontawesome-regular-star:"
     Naughty IP: [18.222.86.32](./objectives/o8.md#naughty-ip)<br/>
     Credential Mining: [*alice*](./objectives/o8.md#credential-mining)<br/>
     404 FTW: [`/proc`](./objectives/o8.md#404-ftw)<br/>
     IMDS, XXE, and Other Abbreviations: [`http://169.254.169.254/latest/meta-data/identity-credentials/ec2/security-credentials/ec2-instance`](./objectives/o8.md#imds-xxe-and-other-abbreviations)
 
-!!! done "9. Open Boria Mine Door - :fontawesome-solid-star::fontawesome-solid-star::fontawesome-solid-star::fontawesome-regular-star::fontawesome-regular-star:"
+!!! success "9. Open Boria Mine Door - :fontawesome-solid-star::fontawesome-solid-star::fontawesome-solid-star::fontawesome-regular-star::fontawesome-regular-star:"
     [Follow the instructions](./objectives/o9.md) to open all the locks.
 
-!!! done "10. Glamtariel's Fountain - :fontawesome-solid-star::fontawesome-solid-star::fontawesome-solid-star::fontawesome-solid-star::fontawesome-solid-star:"
+!!! success "10. Glamtariel's Fountain - :fontawesome-solid-star::fontawesome-solid-star::fontawesome-solid-star::fontawesome-solid-star::fontawesome-solid-star:"
     [`goldring-morethansupertopsecret76394734.png`](./objectives/o10.md)
 
-!!! done "11. AWS CLI Intro - :fontawesome-solid-star::fontawesome-regular-star::fontawesome-regular-star::fontawesome-regular-star::fontawesome-regular-star:"
+!!! success "11. AWS CLI Intro - :fontawesome-solid-star::fontawesome-regular-star::fontawesome-regular-star::fontawesome-regular-star::fontawesome-regular-star:"
     Enter the [correct AWS CLI commands](./objectives/o11.md) in the AWS 101 terminal.
 
-!!! done "12. Trufflehog Search - :fontawesome-solid-star::fontawesome-solid-star::fontawesome-regular-star::fontawesome-regular-star::fontawesome-regular-star:"
+!!! success "12. Trufflehog Search - :fontawesome-solid-star::fontawesome-solid-star::fontawesome-regular-star::fontawesome-regular-star::fontawesome-regular-star:"
     [`put_policy.py`](./objectives/o12.md)
 
-!!! done "13. Exploitation via AWS CLI - :fontawesome-solid-star::fontawesome-solid-star::fontawesome-solid-star::fontawesome-regular-star::fontawesome-regular-star:"
+!!! success "13. Exploitation via AWS CLI - :fontawesome-solid-star::fontawesome-solid-star::fontawesome-solid-star::fontawesome-regular-star::fontawesome-regular-star:"
     Enter the [correct AWS CLI commands](./objectives/o13.md) in the AWS 201 terminal.
 
-!!! done "14. Buy a Hat - :fontawesome-solid-star::fontawesome-solid-star::fontawesome-regular-star::fontawesome-regular-star::fontawesome-regular-star:"
+!!! success "14. Buy a Hat - :fontawesome-solid-star::fontawesome-solid-star::fontawesome-regular-star::fontawesome-regular-star::fontawesome-regular-star:"
     [Buy a hat](./objectives/o14.md) using the hat vending machine and KTM.
 
-!!! done "15. Blockchain Divination - :fontawesome-solid-star::fontawesome-solid-star::fontawesome-solid-star::fontawesome-solid-star::fontawesome-regular-star:"
+!!! success "15. Blockchain Divination - :fontawesome-solid-star::fontawesome-solid-star::fontawesome-solid-star::fontawesome-solid-star::fontawesome-regular-star:"
     [`0xc27A2D3DE339Ce353c0eFBa32e948a88F1C86554`](./objectives/o15.md)
 
-!!! done "16. Exploit a Smart Contract - :fontawesome-solid-star::fontawesome-solid-star::fontawesome-solid-star::fontawesome-solid-star::fontawesome-solid-star:"
+!!! success "16. Exploit a Smart Contract - :fontawesome-solid-star::fontawesome-solid-star::fontawesome-solid-star::fontawesome-solid-star::fontawesome-solid-star:"
     Buy a [Bored Sporc NFT](./objectives/o16.md) by exploiting a flaw in the smart contract.
 
 
