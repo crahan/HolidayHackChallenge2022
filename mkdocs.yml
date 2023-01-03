@@ -27,7 +27,6 @@ theme:
     scheme: default
     primary: teal
     accent: teal
-
 extra:
   social:
     - icon: fontawesome/brands/twitter

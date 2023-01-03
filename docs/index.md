@@ -27,7 +27,7 @@ Unlike previous years, this time around there are only two main sections. There'
     Investigate the `suspicious.pcap` packet capture file and [answer all the questions](./objectives/o2.md).
 
 !!! success "3. Windows Event Logs - :fontawesome-solid-star::fontawesome-solid-star::fontawesome-regular-star::fontawesome-regular-star::fontawesome-regular-star:"
-    Investigate the `powershell.evtx` log file and [answer all questions](./objectives/o3.md).
+    Investigate the `powershell.evtx` log file and [answer all the questions](./objectives/o3.md).
 
 !!! success "4. Suricata Regatta - :fontawesome-solid-star::fontawesome-solid-star::fontawesome-solid-star::fontawesome-regular-star::fontawesome-regular-star:"
     Add the [4 requested Suricata rules](./objectives/o4.md) to the `suricata.rules` file.
