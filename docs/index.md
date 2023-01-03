@@ -69,7 +69,7 @@ Unlike previous years, this time around there are only two main sections. There'
     [`0xc27A2D3DE339Ce353c0eFBa32e948a88F1C86554`](./objectives/o15.md)
 
 !!! done "16. Exploit a Smart Contract - :fontawesome-solid-star::fontawesome-solid-star::fontawesome-solid-star::fontawesome-solid-star::fontawesome-solid-star:"
-     **TODO** [Answer to Objective 16](./objectives/o16.md)
+    Buy a [Bored Sporc NFT](./objectives/o16.md) by exploiting a flaw in the smart contract.
 
 
 ## Conclusion
