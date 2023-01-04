@@ -1,0 +1,10 @@
+stages:
+  - deploy
+
+deploy-job:
+  stage: deploy
+  environment: production
+  script:
+    - rsync -e "ssh -i /etc/gitlab-runner/hhc22-wordpress-deploy"
+       --chown=www-data:www-data -atv --delete --progress
+       ./ root@wordpress.flag.net.internal:/var/www/html

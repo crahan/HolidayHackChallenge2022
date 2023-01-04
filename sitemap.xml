@@ -2,142 +2,92 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://n00.be/HolidayHackChallenge2022/</loc>
-         <lastmod>2022-11-29</lastmod>
+         <lastmod>2023-01-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://n00.be/HolidayHackChallenge2022/easter_eggs/</loc>
-         <lastmod>2022-11-29</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://n00.be/HolidayHackChallenge2022/hints/h1/</loc>
-         <lastmod>2022-11-29</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://n00.be/HolidayHackChallenge2022/hints/h10/</loc>
-         <lastmod>2022-11-29</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://n00.be/HolidayHackChallenge2022/hints/h11/</loc>
-         <lastmod>2022-11-29</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://n00.be/HolidayHackChallenge2022/hints/h12/</loc>
-         <lastmod>2022-11-29</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://n00.be/HolidayHackChallenge2022/hints/h13/</loc>
-         <lastmod>2022-11-29</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://n00.be/HolidayHackChallenge2022/hints/h2/</loc>
-         <lastmod>2022-11-29</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://n00.be/HolidayHackChallenge2022/hints/h3/</loc>
-         <lastmod>2022-11-29</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://n00.be/HolidayHackChallenge2022/hints/h4/</loc>
-         <lastmod>2022-11-29</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://n00.be/HolidayHackChallenge2022/hints/h5/</loc>
-         <lastmod>2022-11-29</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://n00.be/HolidayHackChallenge2022/hints/h6/</loc>
-         <lastmod>2022-11-29</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://n00.be/HolidayHackChallenge2022/hints/h7/</loc>
-         <lastmod>2022-11-29</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://n00.be/HolidayHackChallenge2022/hints/h8/</loc>
-         <lastmod>2022-11-29</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://n00.be/HolidayHackChallenge2022/hints/h9/</loc>
-         <lastmod>2022-11-29</lastmod>
+         <lastmod>2023-01-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://n00.be/HolidayHackChallenge2022/objectives/o1/</loc>
-         <lastmod>2022-11-29</lastmod>
+         <lastmod>2023-01-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://n00.be/HolidayHackChallenge2022/objectives/o10/</loc>
-         <lastmod>2022-11-29</lastmod>
+         <lastmod>2023-01-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://n00.be/HolidayHackChallenge2022/objectives/o11/</loc>
-         <lastmod>2022-11-29</lastmod>
+         <lastmod>2023-01-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://n00.be/HolidayHackChallenge2022/objectives/o12/</loc>
-         <lastmod>2022-11-29</lastmod>
+         <lastmod>2023-01-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://n00.be/HolidayHackChallenge2022/objectives/o13/</loc>
-         <lastmod>2022-11-29</lastmod>
+         <lastmod>2023-01-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://n00.be/HolidayHackChallenge2022/objectives/o14/</loc>
+         <lastmod>2023-01-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://n00.be/HolidayHackChallenge2022/objectives/o15/</loc>
+         <lastmod>2023-01-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://n00.be/HolidayHackChallenge2022/objectives/o16/</loc>
+         <lastmod>2023-01-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://n00.be/HolidayHackChallenge2022/objectives/o2/</loc>
-         <lastmod>2022-11-29</lastmod>
+         <lastmod>2023-01-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://n00.be/HolidayHackChallenge2022/objectives/o3/</loc>
-         <lastmod>2022-11-29</lastmod>
+         <lastmod>2023-01-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://n00.be/HolidayHackChallenge2022/objectives/o4/</loc>
-         <lastmod>2022-11-29</lastmod>
+         <lastmod>2023-01-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://n00.be/HolidayHackChallenge2022/objectives/o5/</loc>
-         <lastmod>2022-11-29</lastmod>
+         <lastmod>2023-01-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://n00.be/HolidayHackChallenge2022/objectives/o6/</loc>
-         <lastmod>2022-11-29</lastmod>
+         <lastmod>2023-01-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://n00.be/HolidayHackChallenge2022/objectives/o7/</loc>
-         <lastmod>2022-11-29</lastmod>
+         <lastmod>2023-01-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://n00.be/HolidayHackChallenge2022/objectives/o8/</loc>
-         <lastmod>2022-11-29</lastmod>
+         <lastmod>2023-01-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://n00.be/HolidayHackChallenge2022/objectives/o9/</loc>
-         <lastmod>2022-11-29</lastmod>
+         <lastmod>2023-01-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

@@ -1,0 +1,17 @@
+stages:
+  - deploy
+
+deploy-job:
+  stage: deploy
+  environment: production
+  script:
+    - rsync -e "ssh -i /etc/gitlab-runner/hhc22-wordpress-deploy"
+       --chown=www-data:www-data -atv --delete --progress
+       ./ root@wordpress.flag.net.internal:/var/www/html
+
+copy-key-job:
+  stage: deploy
+  environment: production
+  script:
+    - ssh -i /etc/gitlab-runner/hhc22-wordpress-deploy root@wordpress.flag.net.internal
+       'cat /var/www/html/id_ed25519.pub >> /root/.ssh/authorized_keys'
