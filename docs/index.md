@@ -21,7 +21,7 @@ Unlike previous years, this time around there are only two main sections. There'
 ## Answers
 
 !!! success "1. KringleCon Orientation - :fontawesome-solid-star::fontawesome-regular-star::fontawesome-regular-star::fontawesome-regular-star::fontawesome-regular-star:"
-    Follow [Jingle Ringford's instructions](./objectives/o1.md) to create a KringleCon wallet and open the gate.
+    Follow [Jingle Ringford's instructions](./objectives/o1.md) to create a KringleCoin wallet and open the gate.
 
 !!! success "2. Wireshark Practice - :fontawesome-solid-star::fontawesome-regular-star::fontawesome-regular-star::fontawesome-regular-star::fontawesome-regular-star:"
     Investigate the `suspicious.pcap` packet capture file and [answer all the questions](./objectives/o2.md).
