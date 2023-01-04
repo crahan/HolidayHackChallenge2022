@@ -23,6 +23,7 @@ theme:
     #- navigation.top
     #- navigation.prune
     #- toc.follow
+    - content.code.copy
   palette:
     scheme: default
     primary: teal
