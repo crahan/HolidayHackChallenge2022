@@ -5,7 +5,7 @@
 
 ## Introduction
 
-![Going on an adventure!!!](./img/misc/going_on_an_adventure.gif){ align=left } Hello there and welcome to my [2022 SANS Holiday Hack Challenge](https://holidayhackchallenge.com/2022/) write-up. Here we are again, for the fifth time no less. In 2020, my write-up won best technical answer. In 2021, I was extremely humbled to win first prize. This year, more than ever, my motivation is *you*. The first time player, the cybersecurity enthousiast, the seasoned professional, and every type of player in between. May this write-up provide you with that nudge to help solve that final challenge or be a learning guide as you dip your toes in the exciting world of cybersecurity! :hugging_face:
+![Going on an adventure!!!](./img/misc/going_on_an_adventure.gif){ align=left } Hello there and welcome to my [2022 SANS Holiday Hack Challenge](https://holidayhackchallenge.com/2022/) write-up. Here we are again, for the fifth time no less. In [2020](https://n00.be/HolidayHackChallenge2020/), my write-up was selected as the best technical answer. In [2021](https://n00.be/HolidayHackChallenge2021/), I was extremely humbled to win first prize. This year, more than ever, my motivation is *you*. The first time participant, the cybersecurity enthousiast, the seasoned professional, and every type of player in between. May this write-up provide you with that nudge to help solve that final challenge or be a learning guide as you dip your toes in the exciting world of cybersecurity! :hugging_face:
 
 Unlike previous years, this time around there are only two main sections. There's this page, which contains the introduction, answers, the overall narrative, and final conclusion. And there's [Objectives](./objectives/o1.md), where you'll find the individual challenge write-ups, organized by ring type, for which an answer had to be submitted. Hints are now a lot more closely integrated. You'll collect them as part of the normal story progression and by keeping an eye out for 6 hidden chests spread around the North Pole. Finally, no SANS Holiday Hack Challenge write-up is really complete without a list of [Easter eggs](./easter_eggs.md) and references found along the way, a little bit of [cheating](./objectives/o2.md#cheating), and the odd [custom script](https://github.com/crahan/HolidayHackChallenge2022/tree/main/docs/tools) or two. Enjoy!
 
@@ -21,7 +21,7 @@ Unlike previous years, this time around there are only two main sections. There'
 ## Answers
 
 !!! success "1. KringleCon Orientation - :fontawesome-solid-star::fontawesome-regular-star::fontawesome-regular-star::fontawesome-regular-star::fontawesome-regular-star:"
-    Follow [Jingle Ringford's instructions](./objectives/o2.md) to create a KringleCon wallet and open the gate.
+    Follow [Jingle Ringford's instructions](./objectives/o1.md) to create a KringleCon wallet and open the gate.
 
 !!! success "2. Wireshark Practice - :fontawesome-solid-star::fontawesome-regular-star::fontawesome-regular-star::fontawesome-regular-star::fontawesome-regular-star:"
     Investigate the `suspicious.pcap` packet capture file and [answer all the questions](./objectives/o2.md).
@@ -39,7 +39,7 @@ Unlike previous years, this time around there are only two main sections. There'
     [082bb339ec19de4935867](./objectives/o6.md)
 
 !!! success "7. Jolly CI/CD - :fontawesome-solid-star::fontawesome-solid-star::fontawesome-solid-star::fontawesome-solid-star::fontawesome-solid-star:"
-    [oI40zIuCcN8c3MhKgQjOMN8lfYtVqcK](./objectives/o7.md)
+    [oI40zIuCcN8c3MhKgQjOMN8lfYtVqcKT](./objectives/o7.md)
 
 !!! success "8. Boria PCAP Mining - :fontawesome-solid-star::fontawesome-solid-star::fontawesome-regular-star::fontawesome-regular-star::fontawesome-regular-star:"
     Naughty IP: [18.222.86.32](./objectives/o8.md#naughty-ip)<br/>
@@ -48,7 +48,7 @@ Unlike previous years, this time around there are only two main sections. There'
     IMDS, XXE, and Other Abbreviations: [`http://169.254.169.254/latest/meta-data/identity-credentials/ec2/security-credentials/ec2-instance`](./objectives/o8.md#imds-xxe-and-other-abbreviations)
 
 !!! success "9. Open Boria Mine Door - :fontawesome-solid-star::fontawesome-solid-star::fontawesome-solid-star::fontawesome-regular-star::fontawesome-regular-star:"
-    [Follow the instructions](./objectives/o9.md) to open all the locks.
+    [Find the correct keys](./objectives/o9.md) to open all the locks.
 
 !!! success "10. Glamtariel's Fountain - :fontawesome-solid-star::fontawesome-solid-star::fontawesome-solid-star::fontawesome-solid-star::fontawesome-solid-star:"
     [`goldring-morethansupertopsecret76394734.png`](./objectives/o10.md)
@@ -69,7 +69,7 @@ Unlike previous years, this time around there are only two main sections. There'
     [`0xc27A2D3DE339Ce353c0eFBa32e948a88F1C86554`](./objectives/o15.md)
 
 !!! success "16. Exploit a Smart Contract - :fontawesome-solid-star::fontawesome-solid-star::fontawesome-solid-star::fontawesome-solid-star::fontawesome-solid-star:"
-    Buy a [Bored Sporc NFT](./objectives/o16.md) by exploiting a flaw in the smart contract.
+    [Buy a Bored Sporc NFT](./objectives/o16.md) by exploiting a flaw in the smart contract.
 
 
 ## Conclusion
