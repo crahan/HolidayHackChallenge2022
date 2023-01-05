@@ -30,6 +30,9 @@ theme:
     accent: teal
 extra:
   social:
+    - icon: fontawesome/brands/mastodon
+      link: https://mastodon.social/@crahan
+      name: CraHan on Mastodon
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/crahan
       name: CraHan on Twitter
