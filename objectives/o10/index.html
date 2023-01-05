@@ -1333,14 +1333,14 @@ curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </spa
 <p>To get the golden ring, we can't just straight up grab it from the princess. Instead, we need to exchange it for the silver ring. At the start of the challenge we determined that giving something to the princess for her to look at is done through the <code>imgDrop</code> field, which means we can't use that field for triggering XXE injection anymore. Instead, we need to use the REQ and TYPE hint from the latest response and move our XXE injection to the <code>reqType</code> field.</p>
 <p><img alt="Exchange the gold ring" class="border" src="../../img/objectives/o10/exchange_goldring.png" /></p>
 <p>This time, we're given the <a href="../../artifacts/objectives/o10/goldring-morethansupertopsecret76394734.png">golden ring</a> and with that the answer to this challenge! <img alt="👍" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f44d.svg" title=":thumbsup:" /></p>
+<div class="admonition success">
+<p class="admonition-title">Answer</p>
+<p><code>goldring-morethansupertopsecret76394734.png</code></p>
+</div>
 <div class="admonition note">
 <p class="admonition-title">Automating the challenge using Python<span id="automating"></span></p>
 <p>Clicking and dragging images or copy/pasting <code>curl</code> commands can become a little tedious. <a href="../../tools/objectives/o10/send_requests.py">This Python script</a> automates the process by retrieving a valid cookie and CSRF token (i.e., ticket), sending the initial JSON requests, executing the necessary XXE injections, and downloading all the image assets.</p>
 <p><img alt="Python script output" src="../../img/objectives/o10/python_script_output.png" /></p>
-</div>
-<div class="admonition success">
-<p class="admonition-title">Answer</p>
-<p><code>goldring-morethansupertopsecret76394734.png</code></p>
 </div>
 <h2 id="response">Response<a class="headerlink" href="#response" title="Permanent link">⚓︎</a></h2>
 <div class="admonition quote">

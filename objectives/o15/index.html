@@ -1241,6 +1241,10 @@ It sure would be fun to watch you get on her bad side. Heh heh.</p>
 <p>Find a transaction in the blockchain where someone sent or received KringleCoin! The <em>Solidity Source File</em> is listed as <code>KringleCoin.sol</code>. <a href="https://youtu.be/r3zj9DPC8VY">Tom's Talk</a> might be helpful!</p>
 </details>
 <h2 id="solution">Solution<a class="headerlink" href="#solution" title="Permanent link">⚓︎</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Getting lucky</p>
+<p>Because the <a href="https://prod-blockbrowser.kringle.co.in/">Blockchain Explorer</a> opens on the most recently added block by default, we might get lucky and land on a KringleCoin transaction when opening the website. If that's the case, the current block's <em>Solidity Source File</em> field will contain <code>KringleCoin.sol</code> and the smart contract address will be in the <em>To</em> field.</p>
+</div>
 <details class="info">
 <summary>What is a smart contract?</summary>
 <p><a href="https://www.ibm.com/topics/smart-contracts">Per IBM</a>, <em>Smart contracts are simply programs stored on a blockchain that run when predetermined conditions are met. They typically are used to automate the execution of an agreement so that all participants can be immediately certain of the outcome, without any intermediary’s involvement or time loss. They can also automate a workflow, triggering the next action when conditions are met.</em></p>
@@ -1249,10 +1253,6 @@ It sure would be fun to watch you get on her bad side. Heh heh.</p>
 <p>In addition, with blockchain technology every new block holds the hash of the previous block and thus new data is always added to the end of the blockchain. Since transferring KC between wallets requires the KringleCoin smart contract address and new blocks are added after existing blocks, the smart contract has to be located somewhere at the beginning of the blockchain.</p>
 <p>Iterating over the blockchain from the beginning using the <a href="https://prod-blockbrowser.kringle.co.in/">Blockchain Explorer</a>, we can skip over block number 0 as that is what's called the <a href="https://tecracoin.medium.com/what-is-genesis-block-and-why-genesis-block-is-needed-1b37d4b75e43">Genesis Block</a>. It exists because the blockchain needs to start with something and it allows the next block to calculate a parent hash value. As expected though, the second block or block number 1 is where the KringleCoin smart contract is stored.</p>
 <p><img alt="KringleCoin Smart Contract address" src="../../img/objectives/o15/kringlecoin_smart_contract_address.png" /></p>
-<div class="admonition note">
-<p class="admonition-title">Getting lucky</p>
-<p>Because the Blockchain Explorer opens on the most recently added block by default, we might get lucky and land on a KringleCoin transaction when opening the website. If that's the case, the current block's <em>Solidity Source File</em> field will contain <code>KringleCoin.sol</code> and the smart contract address will be in the <em>To</em> field.</p>
-</div>
 <div class="admonition success">
 <p class="admonition-title">Answer</p>
 <p><code>0xc27A2D3DE339Ce353c0eFBa32e948a88F1C86554</code></p>
