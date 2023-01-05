@@ -1275,9 +1275,9 @@ Please, for the sake of our Holiday help us recover the Ring and save Christmas!
 </code></pre></div>
 </details>
 <h3 id="obtain-write-access-to-the-git-repository">Obtain write access to the Git repository<a class="headerlink" href="#obtain-write-access-to-the-git-repository" title="Permanent link">⚓︎</a></h3>
-<p>Start by cloning the repository mentioned by <a href="../o6/">Tinsel Upatree</a> using <code>git clone http://gitlab.flag.net.internal/rings-of-powder/wordpress.flag.net.internal.git</code> and taking a look at the commit history. Git repositories keep a permanent log of all changes, including mistakes like the one Tinsel made as they were explaining their CI/CD pipeline to us. Once the repository has been cloned, change to the <code>wordpress.flag.net.internal.git</code> folder and use <code>git log</code> to print commit message details.</p>
+<p>Start by cloning the repository mentioned by <a href="../o6/#response">Tinsel Upatree</a> using <code>git clone http://gitlab.flag.net.internal/rings-of-powder/wordpress.flag.net.internal.git</code> and taking a look at the commit history. Git repositories keep a permanent log of all changes, including mistakes like the one Tinsel made as they were explaining their CI/CD pipeline to us. Once the repository has been cloned, change to the <code>wordpress.flag.net.internal.git</code> folder and use <code>git log</code> to print commit message details.</p>
 <p><img alt="Commit history" class="border" src="../../img/objectives/o7/commit_history.png" /></p>
-<p>That <em>whoops</em> message seems to indicate someone messed up and tried to correct the problem with an update, so let's take a closer look at the previous commit to see exactly what files were changed. Use <code>git show abdea0ebb21b156c01f7533cea3b895c26198c98</code> to bring up the commit details.</p>
+<p>That <em>whoops</em> message seems to indicate someone messed up and tried to correct the problem with an update. So, let's take a closer look at the previous commit to see exactly what files were changed. Use <code>git show abdea0ebb21b156c01f7533cea3b895c26198c98</code> to bring up the commit details.</p>
 <details class="info">
 <summary>Reading Git diff output</summary>
 <p>Git commit details include output from <code>git diff</code> which can be a little daunting to read at first. The syntax is meant to show exactly what information was added and removed from each file between different commits. Here's a <a href="https://levelup.gitconnected.com/what-is-git-diff-and-how-do-we-read-the-output-69f5b2036186">great write-up</a> that can help to better understand the details of the <code>diff</code> syntax.</p>
@@ -1376,7 +1376,7 @@ git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"
 </span><span class="hll"><span class="w">       </span><span class="l l-Scalar l-Scalar-Plain">&#39;cat /var/www/html/id_ed25519.pub &gt;&gt; /root/.ssh/authorized_keys&#39;</span>
 </span></code></pre></div></td></tr></table></div>
 </div>
-<p>With the <code>id_ed25519.pub</code> file copied to our locally cloned Git repository folder and a new job entry added to <code>.gitlab-ci.yml</code> everything's in place to run our exploit. All that's left is for us to commit (lines 2-3) and push our changes (line 4) to the <em>gitlab.flag.net.internal</em> GitLab server, and wait for the updated CI/CD automation to kick off.</p>
+<p>With the <code>id_ed25519.pub</code> file copied to our locally cloned Git repository folder and a new job entry added to <code>.gitlab-ci.yml</code> everything's in place to run our exploit. All that's left is for us to commit our changes (lines 2-3), push the modified files to the <em>gitlab.flag.net.internal</em> GitLab server (line 4), and wait for the updated CI/CD automation to execute.</p>
 <div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Commit and push changes to the GitLab host</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
@@ -1468,7 +1468,7 @@ Thank you, and off you go.</p>
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["toc.integrate", "navigation.sections"], "search": "../../assets/javascripts/workers/search.94e452fd.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["toc.integrate", "navigation.sections", "content.code.copy"], "search": "../../assets/javascripts/workers/search.94e452fd.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.931207ad.min.js"></script>

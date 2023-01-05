@@ -1262,7 +1262,7 @@ Good luck, and thanks for helping save the North Pole!
 <p class="admonition-title">Question</p>
 <p>First, please create a Suricata rule to catch DNS lookups for <em>adv.epostoday.uk</em>. Whenever there's a match, the alert message (msg) should read <em>Known bad DNS lookup, possible Dridex infection</em>.</p>
 </div>
-<p>We can use the official <a href="https://suricata.readthedocs.io/en/suricata-6.0.0/rules/intro.html">Suricata documentation</a> to help with building these rules. For the first rule we need to <a href="https://suricata.readthedocs.io/en/suricata-6.0.0/rules/intro.html#action"><code>alert</code></a> on <a href="https://suricata.readthedocs.io/en/suricata-6.0.0/rules/intro.html#protocol"><code>dns</code></a> protocol traffic between <code>any</code> source and destination IP address and port, where the <a href="https://suricata.readthedocs.io/en/suricata-6.0.0/rules/dns-keywords.html"><code>dns.query</code></a> contains <em>adv.epostoday.uk</em>. We can add <code>nocase</code> to make the match behave in a case-insensitive manner. Don't forget to also add a unique <code>sid</code> identifier to each rule.</p>
+<p>We can use the official <a href="https://suricata.readthedocs.io/en/suricata-6.0.0/rules/intro.html">Suricata documentation</a> to help with building these rules. For the first rule we need to <a href="https://suricata.readthedocs.io/en/suricata-6.0.0/rules/intro.html#action"><code>alert</code></a> on <a href="https://suricata.readthedocs.io/en/suricata-6.0.0/rules/intro.html#protocol"><code>dns</code></a> protocol traffic between <code>any</code> source and destination IP address and port, where the <a href="https://suricata.readthedocs.io/en/suricata-6.0.0/rules/dns-keywords.html#dns-query"><code>dns.query</code></a> contains <em>adv.epostoday.uk</em>. We can add <code>nocase</code> to make the match behave in a case-insensitive manner. Don't forget to also add a unique <code>sid</code> identifier to each rule.</p>
 <table>
 <thead>
 <tr>
@@ -1306,7 +1306,7 @@ Good luck, and thanks for helping save the North Pole!
 <p class="admonition-title">Question</p>
 <p>Develop a Suricata rule that alerts whenever the infected IP address 192.185.57.242 communicates with internal systems over HTTP. When there's a match, the message (msg) should read <em>Investigate suspicious connections, possible Dridex infection</em>.</p>
 </div>
-<p>This rule needs to be a little more specific regarding the IP addresses involved in the connection. We need to <a href="https://suricata.readthedocs.io/en/suricata-6.0.0/rules/intro.html#action"><code>alert</code></a> on <a href="https://suricata.readthedocs.io/en/suricata-6.0.0/rules/intro.html#protocol"><code>http</code></a> protocol traffic between <code>any</code> port on malicious IP address 192.185.57.242 and <code>any</code> IP address and port where the network connection was effectively <a href="https://suricata.readthedocs.io/en/suricata-6.0.0/rules/flow-keywords.html#flow"><code>established</code></a>.</p>
+<p>This rule needs to be a little more specific regarding the IP addresses involved in the connection. We need to <a href="https://suricata.readthedocs.io/en/suricata-6.0.0/rules/intro.html#action"><code>alert</code></a> on <a href="https://suricata.readthedocs.io/en/suricata-6.0.0/rules/intro.html#protocol"><code>http</code></a> protocol traffic between <code>any</code> port on infected IP address 192.185.57.242 and <code>any</code> IP address and port where the network connection was effectively <a href="https://suricata.readthedocs.io/en/suricata-6.0.0/rules/flow-keywords.html#flow"><code>established</code></a>.</p>
 <table>
 <thead>
 <tr>
@@ -1511,7 +1511,7 @@ YOU...SHALL NOT...PASS!!!<br/></p>
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["toc.integrate", "navigation.sections"], "search": "../../assets/javascripts/workers/search.94e452fd.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["toc.integrate", "navigation.sections", "content.code.copy"], "search": "../../assets/javascripts/workers/search.94e452fd.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.931207ad.min.js"></script>

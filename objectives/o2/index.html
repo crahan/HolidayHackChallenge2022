@@ -1252,10 +1252,10 @@ Tips:
 </div>
 <p>Wireshark's <em>File &gt; Export Objects</em> menu lists the different object types that can be exported from the <a href="../../artifacts/objectives/o2/suspicious.pcap"><code>suspicious.pcap</code></a> file.</p>
 <p><img alt="Export object submenu" class="border" src="../../img/objectives/o2/export_objects.png" /></p>
-<p>Iterating over each menu entry shows that only the <em>HTTP...</em> submenu has several exportable objects.</p>
+<p>Opening each object type menu entry shows that only the <em>HTTP...</em> submenu leads to several exportable objects.</p>
 <div class="admonition success">
 <p class="admonition-title">Answer</p>
-<p>Answer: http</p>
+<p>http</p>
 </div>
 <h3 id="question-2">Question 2<a class="headerlink" href="#question-2" title="Permanent link">⚓︎</a></h3>
 <div class="admonition question">
@@ -1285,7 +1285,7 @@ Tips:
 <p>What is the IP of the Apache server?</p>
 </div>
 <p>Wireshark's <a href="https://www.wireshark.org/docs/dfref/h/http.html">HTTP display filter documentation</a> tells us we can use <code>http.server == "Apache"</code> to find the proper IP address.</p>
-<p><img alt="Apache server" class="border" src="../../img/objectives/o2/apache_server.png" />{ class=border }</p>
+<p><img alt="Apache server" class="border" src="../../img/objectives/o2/apache_server.png" /></p>
 <div class="admonition success">
 <p class="admonition-title">Answer</p>
 <p>192.185.57.242</p>
@@ -1295,7 +1295,7 @@ Tips:
 <p class="admonition-title">Question</p>
 <p>What file is saved to the infected host?</p>
 </div>
-<p>Exporting the <a href="../../artifacts/objectives/o2/app.php"><code>app.php</code></a> file using the <em>HTTP object list</em> dialog from questions 1 to 3 and looking at the JavaScript code shows a function call on line 68 to a <code>saveAs()</code> function which downloads the file as <code>Ref_Sept24-2020.zip</code>.</p>
+<p>Exporting the <a href="../../artifacts/objectives/o2/app.php"><code>app.php</code></a> file using the <em>HTTP object list</em> dialog from questions 1 to 3 and looking at the JavaScript code shows a function call on line 68 to a <code>saveAs</code> function which downloads the data stored in <code>blob1</code> as <code>Ref_Sept24-2020.zip</code>.</p>
 <p><img alt="saveAs function" class="border" src="../../img/objectives/o2/app_php.png" /></p>
 <div class="admonition success">
 <p class="admonition-title">Answer</p>
@@ -1306,7 +1306,7 @@ Tips:
 <p class="admonition-title">Question</p>
 <p>Attackers used bad TLS certificates in this traffic. Which countries were they registered to? Submit the names of the countries in alphabetical order separated by a commas (Ex: Norway, South Korea).</p>
 </div>
-<p>Certificate data is sent as part of TLS handshake packets of type 11. Using <code>tls</code> we can filter down the list to just those packets that contain certificate details. Selecting each of the packets and reviewing the packet details under the <em>Transport Layer Security</em> and <em>Certificate</em> nodes will tell us country information.</p>
+<p>Certificate data is sent as part of <a href="https://ask.wireshark.org/question/12156/how-to-extract-certificate-from-ssl-session-setup-trace/">TLS handshake packets of type 11</a>. Using <code>tls.handshake.type == 11</code> we can filter down the list to just those packets that contain certificate details. Selecting each of the packets and reviewing the packet details under the <em>Transport Layer Security</em> and <em>Certificate</em> nodes will tell us country information.</p>
 <p><img alt="TLS handshake 11" class="border" src="../../img/objectives/o2/tls_handshake_11.png" /></p>
 <p>As there's still some legitimate traffic in the filtered packet list, going over every single entry one by one, expanding the nodes, and finding the country code can be tedious. A quicker solution is to find one entry with the proper information, right-clicking on the node and selecting <em>Apply as Column</em> from the context menu.</p>
 <p><img alt="Country column" class="border" src="../../img/objectives/o2/country_column.png" /></p>
@@ -1321,7 +1321,7 @@ Tips:
 <p>Is the host infected (Yes/No)?</p>
 </div>
 <p>It sounds like someone fell for a pishing attack. Clicking the link triggered a request for the <a href="../../artifacts/objectives/o2/app.php"><code>app.php</code></a> script after which <code>Ref_Sept24-2020.zip</code> was automatically downloaded. Unpacking <code>Ref_Sept24-2020.zip</code> and executing the embedded malicious <code>Ref_Sept24-2020.scr</code> binary then caused the host to start communicating with the suspicious IL and SS servers.</p>
-<p>Since the <code>app.php</code> file contains JavaScript code, we can rename the file to <code>app.html</code> and open it in a web browser <strong>in a sandboxed environment</strong>. This will trigger the download of the embedded <a href="../../artifacts/objectives/o2/Ref_Sept24-2020.zip"><code>Ref_Sept24-2020.zip</code></a> file data. Extracting the file, calculating its SHA256 hash using <code>shasum -a 256 Ref_Sept24-2020.scr</code>, and searching for the hash in <a href="https://www.virustotal.com/gui/file/fad001d463e892e7844040cabdcfa8f8431c07e7ef1ffd76ffbd190f49d7693d">VirusTotal</a> show that quite a few AntiVirus scanners flag the file as malicious. With analysis results referring to Cridex and <a href="https://en.wikipedia.org/wiki/Dridex">Dridex</a>, this likely is a banking trojan!</p>
+<p>Since the <code>app.php</code> file contains JavaScript code, we can rename the file to <code>app.html</code> and open it in a web browser <strong>in a sandboxed environment</strong>. This will trigger the download of the embedded <a href="../../artifacts/objectives/o2/Ref_Sept24-2020.zip"><code>Ref_Sept24-2020.zip</code></a> file data. Extracting the file, calculating its SHA256 hash using <code>shasum -a 256 Ref_Sept24-2020.scr</code>, and searching for the hash in <a href="https://www.virustotal.com/gui/file/fad001d463e892e7844040cabdcfa8f8431c07e7ef1ffd76ffbd190f49d7693d">VirusTotal</a> show that quite a few AntiVirus scanners flag the file as malicious. With analysis results referring to <a href="https://en.wikipedia.org/wiki/Dridex">Dridex</a>, this likely is a banking trojan!</p>
 <p><img alt="VirusTotal" class="border" src="../../img/objectives/o2/virustotal.png" /></p>
 <div class="admonition success">
 <p class="admonition-title">Answer</p>
@@ -1415,7 +1415,7 @@ Oh yeah! If you wanna learn more, or get stuck, I hear <a href="https://youtu.be
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["toc.integrate", "navigation.sections"], "search": "../../assets/javascripts/workers/search.94e452fd.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["toc.integrate", "navigation.sections", "content.code.copy"], "search": "../../assets/javascripts/workers/search.94e452fd.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.931207ad.min.js"></script>

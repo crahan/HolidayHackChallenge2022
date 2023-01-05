@@ -1291,7 +1291,7 @@ The misses will have HTTP status code <code>404</code> and, in this case, the su
 </div>
 <p>Searching the web logs using <a href="https://explainshell.com/explain?cmd=grep+18.222.86.32+weberror.log"><code>grep 18.222.86.32 weberror.log</code></a> tells us when 18.222.86.32 started making random requests. They can be identified as a large volume of sequential <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status">404 Not Found</a> log entries which appear to start at 16:47:45 on October 5, 2022.</p>
 <p><img alt="Random requests" class="border" src="../../img/objectives/o8/random_requests.png" /></p>
-<p>Updating the previous command to <a href="https://explainshell.com/explain?cmd=grep+18.222.86.32+weberror.log+%7C+grep+-v+%27+404+-%27"><code>grep 18.222.86.32 weberror.log | grep -v ' 404 -'</code></a> will filter out all 404 Not Found log entries and allow us to locate the first successful request on or after 16:47:45, which appears to be <code>/proc</code>.</p>
+<p>Updating the previous command to <a href="https://explainshell.com/explain?cmd=grep+18.222.86.32+weberror.log+%7C+grep+-v+%27+404+-%27"><code>grep 18.222.86.32 weberror.log | grep -v ' 404 -'</code></a> will filter out all the 404 noise and allow us to locate the first successful request on or after 16:47:45, which appears to be <code>/proc</code>.</p>
 <p><img alt="Successful URL" class="border" src="../../img/objectives/o8/successful_url.png" /></p>
 <div class="admonition success">
 <p class="admonition-title">Answer</p>
@@ -1393,7 +1393,7 @@ Lastly, remember that input sanitization might happen on either the client or se
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["toc.integrate", "navigation.sections"], "search": "../../assets/javascripts/workers/search.94e452fd.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["toc.integrate", "navigation.sections", "content.code.copy"], "search": "../../assets/javascripts/workers/search.94e452fd.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.931207ad.min.js"></script>
