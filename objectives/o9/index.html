@@ -1255,8 +1255,7 @@ Think you can help me get through?</p>
 <h3 id="lock-3">Lock 3<a class="headerlink" href="#lock-3" title="Permanent link">⚓︎</a></h3>
 <p>Input on this lock is also restricted by a Content-Security-Policy, but this time the <code>unsafe-inline</code> directive applies to <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/script-src">JavaScript</a>.</p>
 <p><img alt="Lock 3 source" class="border" src="../../img/objectives/o9/lock3_source.png" /></p>
-<p>By submitting <code>&lt;script&gt;document.body.style.backgroundColor="blue";&lt;/script&gt;</code> we change the background of the <code>body</code> tag to blue. This will cause the server to render a blue square that covers the whole lock, creating a path between input and output.</p>
-<p>Alternatively, we can use the previous <code>div</code> technique but with a blue background on the second lock first to make the server render a blue image, copy the image link, and then submit <code>&lt;img src="images/replace_with_proper_filename.png"&gt;</code> on the third lock.</p>
+<p>By submitting <code>&lt;script&gt;document.body.style.backgroundColor="blue";&lt;/script&gt;</code> we can change the <code>body</code> element background to blue. This will cause the server to render a blue image that covers the whole lock, creating a path between input and output.</p>
 <p><img alt="Lock 3 open" class="border" src="../../img/objectives/o9/lock3.png" /></p>
 <h3 id="lock-4">Lock 4<a class="headerlink" href="#lock-4" title="Permanent link">⚓︎</a></h3>
 <p>No Content-Security-Policy this time. Instead, the lock applies client-side input validation on the HTML form. Each time the input field loses focus the <code>sanitizeInput</code> JavaScript function is called which strips certain characters like <code>&lt;</code>, <code>&gt;</code>, <code>"</code>, and <code>'</code>.</p>
@@ -1317,69 +1316,8 @@ Think you can help me get through?</p>
 <h3 id="lock-6">Lock 6<a class="headerlink" href="#lock-6" title="Permanent link">⚓︎</a></h3>
 <p>As expected, the final lock is the most restrictive with a Content-Security-Policy for both stylesheets and JavaScript. This means none of our previously used techniques will work as there's no <code>unsafe-inline</code> directives to exploit.</p>
 <p><img alt="Lock 6 source" class="border" src="../../img/objectives/o9/lock6_source.png" /></p>
-<p>We could leverage the previous <code>canvas</code> solution by first making lock 1, 3, 4, or 5 render the image we need for lock 6 (see below), copying the image link, and submitting <code>&lt;img src="images/replace_with_proper_filename.png"&gt;</code> on the final lock.</p>
-<details class="info">
-<summary>Create lock 6 image</summary>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
-<span class="normal"> 2</span>
-<span class="normal"> 3</span>
-<span class="normal"> 4</span>
-<span class="normal"> 5</span>
-<span class="normal"> 6</span>
-<span class="normal"> 7</span>
-<span class="normal"> 8</span>
-<span class="normal"> 9</span>
-<span class="normal">10</span>
-<span class="normal">11</span>
-<span class="normal">12</span>
-<span class="normal">13</span>
-<span class="normal">14</span>
-<span class="normal">15</span>
-<span class="normal">16</span>
-<span class="normal">17</span>
-<span class="normal">18</span>
-<span class="normal">19</span>
-<span class="normal">20</span>
-<span class="normal">21</span>
-<span class="normal">22</span>
-<span class="normal">23</span>
-<span class="normal">24</span>
-<span class="normal">25</span>
-<span class="normal">26</span>
-<span class="normal">27</span>
-<span class="normal">28</span>
-<span class="normal">29</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="o">&lt;</span><span class="nx">script</span><span class="o">&gt;</span>
-<span class="cm">/* Create and set the canvas size */</span>
-<span class="nx">canvas</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s1">&#39;canvas&#39;</span><span class="p">);</span>
-<span class="nx">canvas</span><span class="p">.</span><span class="nx">width</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">200</span><span class="p">;</span>
-<span class="nx">canvas</span><span class="p">.</span><span class="nx">height</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">200</span><span class="p">;</span>
-<span class="nx">context</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">canvas</span><span class="p">.</span><span class="nx">getContext</span><span class="p">(</span><span class="s2">&quot;2d&quot;</span><span class="p">);</span>
-<span class="cm">/* Fill the background with green */</span>
-<span class="nx">context</span><span class="p">.</span><span class="nx">fillStyle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;#00ff00&quot;</span><span class="p">;</span>
-<span class="nx">context</span><span class="p">.</span><span class="nx">fillRect</span><span class="p">(</span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="mf">200</span><span class="p">,</span><span class="w"> </span><span class="mf">200</span><span class="p">);</span>
-<span class="cm">/* Draw the first outline and fill with red */</span>
-<span class="nx">context</span><span class="p">.</span><span class="nx">beginPath</span><span class="p">();</span>
-<span class="nx">context</span><span class="p">.</span><span class="nx">moveTo</span><span class="p">(</span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="mf">90</span><span class="p">);</span>
-<span class="nx">context</span><span class="p">.</span><span class="nx">lineTo</span><span class="p">(</span><span class="mf">200</span><span class="p">,</span><span class="w"> </span><span class="mf">90</span><span class="p">);</span>
-<span class="nx">context</span><span class="p">.</span><span class="nx">lineTo</span><span class="p">(</span><span class="mf">200</span><span class="p">,</span><span class="w"> </span><span class="mf">200</span><span class="p">);</span>
-<span class="nx">context</span><span class="p">.</span><span class="nx">lineTo</span><span class="p">(</span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="mf">120</span><span class="p">);</span>
-<span class="nx">context</span><span class="p">.</span><span class="nx">lineTo</span><span class="p">(</span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="mf">90</span><span class="p">);</span>
-<span class="nx">context</span><span class="p">.</span><span class="nx">fillStyle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;red&quot;</span><span class="p">;</span>
-<span class="nx">context</span><span class="p">.</span><span class="nx">fill</span><span class="p">();</span>
-<span class="cm">/* Draw the second outline and fill with blue */</span>
-<span class="nx">context</span><span class="p">.</span><span class="nx">beginPath</span><span class="p">();</span>
-<span class="nx">context</span><span class="p">.</span><span class="nx">moveTo</span><span class="p">(</span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="mf">120</span><span class="p">);</span>
-<span class="nx">context</span><span class="p">.</span><span class="nx">lineTo</span><span class="p">(</span><span class="mf">200</span><span class="p">,</span><span class="w"> </span><span class="mf">200</span><span class="p">);</span>
-<span class="nx">context</span><span class="p">.</span><span class="nx">lineTo</span><span class="p">(</span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="mf">200</span><span class="p">);</span>
-<span class="nx">context</span><span class="p">.</span><span class="nx">lineTo</span><span class="p">(</span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="mf">120</span><span class="p">);</span>
-<span class="nx">context</span><span class="p">.</span><span class="nx">fillStyle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;blue&quot;</span><span class="p">;</span>
-<span class="nx">context</span><span class="p">.</span><span class="nx">fill</span><span class="p">();</span>
-<span class="cm">/* Set the canvas as the only body element */</span>
-<span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">replaceChildren</span><span class="p">(</span><span class="nx">canvas</span><span class="p">);</span>
-<span class="o">&lt;</span><span class="err">/script&gt;</span>
-</code></pre></div></td></tr></table></div>
-</details>
-<p>Instead, let's opt for a technique we haven't used before. Images can be added to an HTML page by putting <a href="https://www.w3docs.com/snippets/html/how-to-display-base64-images-in-html.html">Base64-encoded image data</a> in the <code>src</code> attribute of an <code>img</code> element. Create a PNG image in your preferred image editor, use <code>base64 image.png</code> or <a href="https://gchq.github.io/CyberChef/">CyberChef</a> to generate the Base64-encoded image data, and submit it on the lock using <code>&lt;img src="data:image/png;base64,...&gt;</code>. Expand the section below for an example, based on <a href="../../artifacts/objectives/o9/red-blue-green.png">this PNG image</a>, which can be copy/pasted onto the final lock.</p>
+<p>We could reuse the previous <code>canvas</code> solution by first making lock 1 render the image we need for lock 6, copying the rendered image file name, and submitting <code>&lt;img src="images/rendered_image_file.png"&gt;</code> on the final lock. Instead, let's opt for a technique we haven't used before and which can be applied directly on lock 6 without the need to leverage any additional locks.</p>
+<p>Images can be embedded in an HTML page by putting their <a href="https://www.w3docs.com/snippets/html/how-to-display-base64-images-in-html.html">Base64-encoded image data</a> in the <code>src</code> attribute of an <code>img</code> element. Create a PNG image in your preferred image editor, use the <a href="https://linuxhint.com/bash_base64_encode_decode/"><code>base64</code></a> command or <a href="https://gchq.github.io/CyberChef/">CyberChef</a> to generate the Base64-encoded image data, and submit it on the lock using <code>&lt;img src="data:image/png;base64,iVBORw0KGgoAAAANSU...&gt;</code>. Expand the section below for an example, based on <a href="../../artifacts/objectives/o9/red-blue-green.png">this PNG image</a>, which can be copy/pasted directly onto the final lock.</p>
 <details class="info">
 <summary>Lock 6 Base64-encoded image</summary>
 <div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;data:image/png;base64,</span>
@@ -1503,6 +1441,12 @@ Maybe take a close look at that kind of thing.</p>
 </div>
       
         <div class="md-social">
+  
+    
+    
+    <a href="https://mastodon.social/@crahan" target="_blank" rel="noopener" title="CraHan on Mastodon" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M433 179.11c0-97.2-63.71-125.7-63.71-125.7-62.52-28.7-228.56-28.4-290.48 0 0 0-63.72 28.5-63.72 125.7 0 115.7-6.6 259.4 105.63 289.1 40.51 10.7 75.32 13 103.33 11.4 50.81-2.8 79.32-18.1 79.32-18.1l-1.7-36.9s-36.31 11.4-77.12 10.1c-40.41-1.4-83-4.4-89.63-54a102.54 102.54 0 0 1-.9-13.9c85.63 20.9 158.65 9.1 178.75 6.7 56.12-6.7 105-41.3 111.23-72.9 9.8-49.8 9-121.5 9-121.5zm-75.12 125.2h-46.63v-114.2c0-49.7-64-51.6-64 6.9v62.5h-46.33V197c0-58.5-64-56.6-64-6.9v114.2H90.19c0-122.1-5.2-147.9 18.41-175 25.9-28.9 79.82-30.8 103.83 6.1l11.6 19.5 11.6-19.5c24.11-37.1 78.12-34.8 103.83-6.1 23.71 27.3 18.4 53 18.4 175z"/></svg>
+    </a>
   
     
     

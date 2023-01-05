@@ -1338,7 +1338,7 @@ git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"
 </code></pre></div></td></tr></table></div>
 </div>
 <p>The ability to push changes to the Git repo gives us a few options to obtain access to <em>wordpress.flag.net.internal</em>. We could have the CI/CD automation copy over a simple <a href="https://gist.github.com/joswr1ght/22f40787de19d80d110b37fb79ac3985">PHP web shell</a> and use <a href="https://curl.se/">curl</a> to call the web shell and remotely execute commands on the host. A slightly more robust solution is to leverage the automation pipeline to add our public SSH key to the <em>root</em> user's <code>authorized_keys</code> file which will grant us the ability to SSH into the web server with maximum privileges.</p>
-<p>First, copy the newly obtained <code>~/.ssh/id_ed25519.pub</code> file to <code>~/wordpress.flag.net.internal/id_ed25519.pub</code>. The existing automation will ensure it ends up at <code>/var/www/html/id_ed25519.pub</code> on <em>wordpress.flag.net.internal</em>. Next, update the <a href="../../artifacts/objectives/o7/gitlab-ci-updated.yml"><code>.gitlab-ci.yml</code></a> config file and add a new <code>copy-key-job</code> entry that initiates an SSH session from the Gitlab host to the Wordpress host and appends the contents of <code>/var/www/html/id_ed25519.pub</code> to <code>/root/.ssh/authorized_keys</code> (lines 12-17).</p>
+<p>First, copy the newly obtained <code>~/.ssh/id_ed25519.pub</code> file to <code>~/wordpress.flag.net.internal/id_ed25519.pub</code>. The existing automation will ensure it ends up at <code>/var/www/html/id_ed25519.pub</code> on <em>wordpress.flag.net.internal</em>. Next, update the <a href="../../artifacts/objectives/o7/gitlab-ci-updated.yml"><code>.gitlab-ci.yml</code></a> config file and add a new <code>copy-key-job</code> entry that initiates an SSH session from the Gitlab host to the Wordpress host (line 16) and appends the contents of <code>/var/www/html/id_ed25519.pub</code> to <code>/root/.ssh/authorized_keys</code> (line 17).</p>
 <div class="admonition text">
 <p class="admonition-title">.gitlab-ci.yml</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
@@ -1368,11 +1368,11 @@ git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"
 <span class="w">       </span><span class="l l-Scalar l-Scalar-Plain">--chown=www-data:www-data -atv --delete --progress</span>
 <span class="w">       </span><span class="l l-Scalar l-Scalar-Plain">./ root@wordpress.flag.net.internal:/var/www/html</span>
 
-<span class="hll"><span class="nt">copy-key-job</span><span class="p">:</span>
-</span><span class="hll"><span class="w">  </span><span class="nt">stage</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">deploy</span>
-</span><span class="hll"><span class="w">  </span><span class="nt">environment</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">production</span>
-</span><span class="hll"><span class="w">  </span><span class="nt">script</span><span class="p">:</span>
-</span><span class="hll"><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ssh -i /etc/gitlab-runner/hhc22-wordpress-deploy root@wordpress.flag.net.internal</span>
+<span class="nt">copy-key-job</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">stage</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">deploy</span>
+<span class="w">  </span><span class="nt">environment</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">production</span>
+<span class="w">  </span><span class="nt">script</span><span class="p">:</span>
+<span class="hll"><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ssh -i /etc/gitlab-runner/hhc22-wordpress-deploy root@wordpress.flag.net.internal</span>
 </span><span class="hll"><span class="w">       </span><span class="l l-Scalar l-Scalar-Plain">&#39;cat /var/www/html/id_ed25519.pub &gt;&gt; /root/.ssh/authorized_keys&#39;</span>
 </span></code></pre></div></td></tr></table></div>
 </div>
@@ -1444,6 +1444,12 @@ Thank you, and off you go.</p>
 </div>
       
         <div class="md-social">
+  
+    
+    
+    <a href="https://mastodon.social/@crahan" target="_blank" rel="noopener" title="CraHan on Mastodon" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M433 179.11c0-97.2-63.71-125.7-63.71-125.7-62.52-28.7-228.56-28.4-290.48 0 0 0-63.72 28.5-63.72 125.7 0 115.7-6.6 259.4 105.63 289.1 40.51 10.7 75.32 13 103.33 11.4 50.81-2.8 79.32-18.1 79.32-18.1l-1.7-36.9s-36.31 11.4-77.12 10.1c-40.41-1.4-83-4.4-89.63-54a102.54 102.54 0 0 1-.9-13.9c85.63 20.9 158.65 9.1 178.75 6.7 56.12-6.7 105-41.3 111.23-72.9 9.8-49.8 9-121.5 9-121.5zm-75.12 125.2h-46.63v-114.2c0-49.7-64-51.6-64 6.9v62.5h-46.33V197c0-58.5-64-56.6-64-6.9v114.2H90.19c0-122.1-5.2-147.9 18.41-175 25.9-28.9 79.82-30.8 103.83 6.1l11.6 19.5 11.6-19.5c24.11-37.1 78.12-34.8 103.83-6.1 23.71 27.3 18.4 53 18.4 175z"/></svg>
+    </a>
   
     
     
