@@ -5,7 +5,7 @@
 
 ## Introduction
 
-![Going on an adventure!!!](./img/misc/going_on_an_adventure.gif){ align=left } Hello there and welcome to my [2022 SANS Holiday Hack Challenge](https://holidayhackchallenge.com/2022/) write-up. I've been creating these for a while now and feedback from the KringleCon community these past couple of years has shown me how much of a valuable resource they are. Obviously not as valuable as a legit [Bored Sporc NFT](https://boredsporcrowboatsociety.com/), but valuable nonetheless!
+![Going on an adventure!!!](./img/misc/going_on_an_adventure.gif){ align=left } Hello there and welcome to my [2022 SANS Holiday Hack Challenge](https://holidayhackchallenge.com/2022/) write-up. I've been creating these for a while now and feedback from the KringleCon community these past couple of years has shown me how much of a valuable resource they are. Obviously not as valuable as a totally legit [Bored Sporc NFT](https://boredsporcrowboatsociety.com/), but valuable nonetheless!
 
 So, for this fifth edition, my primary motivation is *you*. The first time participant, the cybersecurity enthousiast, the seasoned professional, and every type of player in between. May this write-up provide you with that final nudge to help solve that difficult challenge or be a learning guide as you dip your toes in the exciting world of cybersecurity! :hugging_face:
 
